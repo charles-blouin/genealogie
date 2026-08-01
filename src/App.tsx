@@ -6,6 +6,7 @@ import sourceData from './data/sources.json'
 import researchData from './data/research.json'
 import maternalExtensionData from './data/maternal-extension.json'
 import jeanMariePoulinExtensionData from './data/jean-marie-poulin-extension.json'
+import paternalExtensionData from './data/paternal-extension.json'
 import type { Person, Relationship, ResearchProfile, Source } from './types/genealogy'
 import { FamilyTree } from './components/FamilyTree'
 import './styles.css'
@@ -20,6 +21,7 @@ interface GenealogyExtension {
 const extensions = [
   maternalExtensionData as GenealogyExtension,
   jeanMariePoulinExtensionData as GenealogyExtension,
+  paternalExtensionData as GenealogyExtension,
 ]
 
 const allResearch = [
