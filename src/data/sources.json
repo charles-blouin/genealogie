@@ -1,1 +1,17 @@
-[]
+[
+{"id":"obit-noella","type":"avis de décès","title":"Avis de décès de Noëlla Blouin, née La Rocque","repository":"Coopérative funéraire des Deux Rives","url":"https://coopfuneraire2rives.com/avis-de-deces/noella-blouin-la-rocque-16590"},
+{"id":"obit-jean-paul","type":"avis de décès","title":"Avis de décès de Jean-Paul Blouin","repository":"Coopérative funéraire des Deux Rives","url":"https://coopfuneraire2rives.com/avis-de-deces/jean-paul-blouin-c-a-14176"},
+{"id":"obit-jean-marie","type":"avis de décès","title":"Avis de décès de Jean-Marie Poulin","notes":"Référence mentionnée dans la conversation; URL à compléter."},
+{"id":"mesaieux-pierrette","type":"index civil","title":"Fiche de Pierrette Beaulieu","repository":"MesAieux","url":"https://www.mesaieux.com/genealogie/pierrette_beaulieu"},
+{"id":"obit-roger-beaulieu","type":"avis de décès","title":"Avis de décès de Roger Beaulieu","repository":"Lépine Cloutier","url":"https://www.lepinecloutier.com/avis-de-deces/18767/"},
+{"id":"association-vaillancourt","type":"publication d’association familiale","title":"Notice d’Irma Vaillancourt","notes":"Référence mentionnée dans la conversation; référence détaillée à compléter."},
+{"id":"mesaieux-amanda","type":"index civil","title":"Fiche de Marie-Amanda Lapointe","repository":"MesAieux","url":"https://www.mesaieux.com/genealogie/marie-amanda_lapointe"},
+{"id":"genealogiequebec-vaillancourt","type":"index généalogique","title":"Jean Napoléon Vaillancourt","repository":"Généalogie Québec","url":"https://genealogie.quebec/stemma4web/info/416648"},
+{"id":"nosorigines-trachy","type":"transcription généalogique","title":"Mary-Jane Trachy","repository":"NosOrigines","url":"https://www.nosorigines.qc.ca/GenealogieQuebec.aspx?genealogie=Trachy_Mary-Jane&pid=1152297"},
+{"id":"nosorigines-sullivan","type":"transcription généalogique","title":"Michael O’Sullivan","repository":"NosOrigines","url":"https://www.nosorigines.qc.ca/GenealogieQuebec.aspx?genealogie=Sullivan_Michael&pid=1188031"},
+{"id":"jerripedia-trachy","type":"histoire familiale","title":"Trachy family in Gaspé","repository":"Jerripedia","url":"https://www.jerripedia.org/wiki/Trachy_family_in_Gasp%C3%A9"},
+{"id":"nosorigines-pierre","type":"transcription généalogique","title":"Pierre Blouin","repository":"NosOrigines","url":"https://www.nosorigines.qc.ca/GenealogieQuebec.aspx?genealogie=Blouin_Pierre&pid=1664997"},
+{"id":"nosorigines-charles","type":"transcription généalogique","title":"Charles Blouin","repository":"NosOrigines","url":"https://www.nosorigines.qc.ca/GenealogieQuebec.aspx?genealogie=Blouin_Charles&pid=333217"},
+{"id":"patrie-emery","type":"arbre généalogique","title":"Famille Blouin — Émery Blouin","repository":"Patrie Family Tree","url":"https://patrie.familytree.website/getperson.php?personID=I4549&tree=patrie"},
+{"id":"assnat-charles-blouin","type":"biographie parlementaire","title":"Charles Blouin, député d’Orléans","repository":"Assemblée nationale du Québec","url":"https://www.assnat.qc.ca/fr/deputes/blouin-charles-2145/biographie.html"}
+]

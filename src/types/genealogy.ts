@@ -10,8 +10,10 @@ export interface GenealogyDate {
 
 export interface Place {
   name: string
-  latitude?: number
-  longitude?: number
+  coordinates?: {
+    latitude: number
+    longitude: number
+  }
 }
 
 export interface LifeEvent {
@@ -37,20 +39,27 @@ export interface Story {
 
 export interface Person {
   id: string
-  displayName: string
-  givenNames: string[]
-  surnameAtBirth: string
-  alternateNames?: string[]
+  names: {
+    given: string[]
+    surnameAtBirth: string
+    display: string
+    alternate: string[]
+  }
   sex?: 'female' | 'male' | 'intersex' | 'unknown'
   living?: boolean
   birth?: LifeEvent
-  death?: LifeEvent
+  death: LifeEvent | null
   occupations?: Occupation[]
-  summary?: string
-  stories?: Story[]
-  photo?: string
+  residences?: LifeEvent[]
+  biography?: {
+    summary?: string
+    stories?: Story[]
+  }
+  photos?: Array<{ path: string; caption?: string; year?: number }>
   sourceIds?: string[]
   tags?: string[]
+  private?: boolean
+  notes?: string
 }
 
 export type RelationshipType =

@@ -11,18 +11,33 @@ header p { margin: .3rem 0 0; color: #6b7280; }
 .search-results { position: absolute; top: 100%; left: 0; right: 0; background: white; border: 1px solid #ddd6c8; box-shadow: 0 8px 20px #0002; }
 .search-results button { display: block; width: 100%; padding: .7rem; border: 0; background: white; text-align: left; cursor: pointer; }
 .search-results button:hover { background: #f5f5f5; }
-.tree-scroll { overflow: auto; min-height: calc(100vh - 92px); padding: 3rem; }
-.family-tree, .family-tree ul { list-style: none; margin: 0; padding-left: 2rem; position: relative; }
-.family-tree ul::before { content: ''; position: absolute; left: .8rem; top: 0; bottom: 1.5rem; border-left: 2px solid #b8aa96; }
-.family-tree li { position: relative; margin: 1.2rem 0; }
-.family-tree li::before { content: ''; position: absolute; left: -1.2rem; top: 1.5rem; width: 1.2rem; border-top: 2px solid #b8aa96; }
-.family-tree > li::before { display: none; }
-.person-card { width: 220px; min-height: 72px; display: flex; flex-direction: column; align-items: flex-start; gap: .2rem; padding: .8rem 1rem; background: white; border: 1px solid #c9c1b4; border-radius: 10px; box-shadow: 0 2px 8px #0001; cursor: pointer; text-align: left; }
-.person-card:hover { transform: translateY(-1px); box-shadow: 0 5px 14px #0002; }
-.person-card span, .person-card small { color: #6b7280; }
-.details-panel { position: fixed; top: 0; right: 0; height: 100vh; width: min(420px, 92vw); background: white; padding: 2rem; box-shadow: -8px 0 30px #0003; overflow-y: auto; z-index: 10; }
-.close-button { float: right; border: 0; background: transparent; font-size: 2rem; cursor: pointer; }
-dl { display: grid; grid-template-columns: 90px 1fr; gap: .6rem; }
-dt { font-weight: 700; }
-dd { margin: 0; }
-@media (max-width: 700px) { header { align-items: stretch; flex-direction: column; gap: 1rem; } .search-wrap { min-width: 0; } .tree-scroll { padding: 1.5rem; } }
+.tree-area { min-height: calc(100vh - 92px); }
+.tree-controls { display: flex; justify-content: center; gap: .75rem; padding: 1.5rem 1rem 0; }
+.tree-controls button, .branch-toggle { border: 1px solid #9b7654; background: #fffaf3; color: #66452a; border-radius: 99px; padding: .45rem .85rem; cursor: pointer; }
+.tree-controls button:hover, .branch-toggle:hover { background: #f1e4d5; }
+.tree-scroll { overflow: auto; padding: 2rem 3rem 4rem; }
+.family-tree, .family-tree ul { list-style: none; margin: 0; padding: 0; }
+.family-tree--vertical { display: flex; flex-direction: column; align-items: center; min-width: max-content; }
+.family-tree--vertical li { position: relative; display: flex; flex-direction: column; align-items: center; padding: 1.3rem 1rem 0; }
+.family-tree--vertical li > ul { display: flex; align-items: flex-start; justify-content: center; position: relative; padding-top: 2rem; }
+.family-tree--vertical li > ul::before { content: ''; position: absolute; top: .75rem; left: 50%; height: 1.25rem; border-left: 2px solid #b8aa96; }
+.family-tree--vertical li > ul > li::before { content: ''; position: absolute; top: .75rem; width: calc(50% + 1rem); height: 1.25rem; border-top: 2px solid #b8aa96; }
+.family-tree--vertical li > ul > li:first-child::before { left: 50%; }
+.family-tree--vertical li > ul > li:last-child::before { right: 50%; }
+.family-tree--vertical li > ul > li:only-child::before { display: none; }
+.tree-person { display: grid; justify-items: center; gap: .55rem; position: relative; z-index: 1; }
+.person-card { width: 250px; background: white; border: 1px solid #c9c1b4; border-radius: 12px; box-shadow: 0 2px 8px #0001; overflow: hidden; text-align: left; }
+.person-card.is-expanded { width: min(390px, 80vw); box-shadow: 0 8px 24px #0002; }
+.person-card__summary { width: 100%; display: grid; grid-template-columns: 1fr auto; gap: .15rem .5rem; padding: .85rem 1rem; border: 0; background: white; cursor: pointer; text-align: left; }
+.person-card__summary:hover { background: #fffaf5; }
+.person-card__name { grid-column: 1; font-weight: 750; color: #392919; }
+.person-card__vital, .person-card__place { grid-column: 1; color: #6b7280; font-size: .86rem; }
+.person-card__toggle { grid-column: 2; grid-row: 1 / span 3; align-self: center; color: #8a6544; font-size: 1.5rem; }
+.person-card__details { border-top: 1px solid #e4d8ca; padding: .9rem 1rem 1rem; color: #4b5563; font-size: .92rem; }
+.person-card__details p { margin: 0 0 .8rem; line-height: 1.45; }
+.person-card__details dl { display: grid; grid-template-columns: 82px 1fr; gap: .4rem .7rem; margin: 0; }
+.person-card__details dt { font-weight: 700; color: #392919; }.person-card__details dd { margin: 0; }
+.person-card__details h3 { margin: .9rem 0 .35rem; font-size: .95rem; color: #392919; }.person-card__details ul { margin: 0; padding-left: 1.1rem; }
+.person-card__tags { display: flex; flex-wrap: wrap; gap: .35rem; }.person-card__tags span { background: #f2e5d7; color: #724d2e; border-radius: 99px; padding: .15rem .45rem; font-size: .78rem; }
+.source-menu { margin-top: 1rem; border-top: 1px solid #e4d8ca; padding-top: .75rem; }.source-menu button { border: 0; background: transparent; padding: 0; color: #724d2e; cursor: pointer; font-weight: 700; }.source-menu ul { margin: .5rem 0 0; padding-left: 1.1rem; }.source-menu li { margin: .35rem 0; }.source-menu a { color: #7a4b25; }
+@media (max-width: 700px) { header { align-items: stretch; flex-direction: column; gap: 1rem; } .search-wrap { min-width: 0; } .tree-scroll { padding: 1rem; } .family-tree--vertical li { padding-left: .35rem; padding-right: .35rem; } .person-card { width: 220px; } }

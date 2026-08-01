@@ -1,63 +1,43 @@
 [
-  {
-    "id": "charles-blouin",
-    "displayName": "Charles Blouin",
-    "givenNames": ["Charles"],
-    "surnameAtBirth": "Blouin",
-    "sex": "male",
-    "living": true,
-    "summary": "Starting person for this family tree.",
-    "occupations": [
-      {
-        "title": "Engineer and entrepreneur",
-        "organization": "Tyto Robotics"
-      }
-    ],
-    "tags": ["Blouin branch"]
-  },
-  {
-    "id": "rene-blouin",
-    "displayName": "René Blouin",
-    "givenNames": ["René"],
-    "surnameAtBirth": "Blouin",
-    "sex": "male",
-    "living": true,
-    "summary": "Father of Charles Blouin."
-  },
-  {
-    "id": "nicole-poulin",
-    "displayName": "Nicole Poulin",
-    "givenNames": ["Nicole"],
-    "surnameAtBirth": "Poulin",
-    "sex": "female",
-    "living": true,
-    "summary": "Mother of Charles Blouin."
-  },
-  {
-    "id": "jean-paul-blouin",
-    "displayName": "Jean-Paul Blouin",
-    "givenNames": ["Jean-Paul"],
-    "surnameAtBirth": "Blouin",
-    "sex": "male",
-    "living": false,
-    "summary": "Paternal grandfather of Charles Blouin."
-  },
-  {
-    "id": "noella-laroque",
-    "displayName": "Noëlla Laroque",
-    "givenNames": ["Noëlla"],
-    "surnameAtBirth": "Laroque",
-    "sex": "female",
-    "living": false,
-    "summary": "Paternal grandmother of Charles Blouin."
-  },
-  {
-    "id": "jean-marie-poulin",
-    "displayName": "Jean-Marie Poulin",
-    "givenNames": ["Jean-Marie"],
-    "surnameAtBirth": "Poulin",
-    "sex": "male",
-    "living": false,
-    "summary": "Maternal grandfather of Charles Blouin."
-  }
+{"id":"charles-blouin","names":{"given":["Charles"],"surnameAtBirth":"Blouin","display":"Charles Blouin","alternate":[]},"sex":"male","living":true,"birth":{"date":{"value":"1992-05-14","precision":"exact"},"place":{"name":"Québec, Québec, Canada","coordinates":{"latitude":46.8139,"longitude":-71.208}}},"death":null,"occupations":[{"title":"Ingénieur","organization":"Tyto Robotics","from":"2014","notes":"Cofondateur et président."}],"residences":[],"biography":{"summary":"Personne de départ de cet arbre familial."},"photos":[],"tags":["Branche Blouin"],"private":false,"notes":"","sourceIds":[]},
+{"id":"rene-blouin","names":{"given":["René"],"surnameAtBirth":"Blouin","display":"René Blouin","alternate":[]},"sex":"male","living":true,"death":null,"residences":[],"biography":{"summary":"Père de Charles Blouin."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["obit-jean-paul","obit-noella"]},
+{"id":"nicole-poulin","names":{"given":["Nicole"],"surnameAtBirth":"Poulin","display":"Nicole Poulin","alternate":[]},"sex":"female","living":true,"death":null,"residences":[],"biography":{"summary":"Mère de Charles Blouin."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["obit-jean-marie"]},
+{"id":"jean-paul-blouin","names":{"given":["Jean-Paul"],"surnameAtBirth":"Blouin","display":"Jean-Paul Blouin","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1923","precision":"year"}},"death":{"date":{"value":"2017","precision":"year"},"sourceIds":["obit-jean-paul"]},"residences":[],"biography":{"summary":"Grand-père paternel de Charles Blouin."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["obit-jean-paul"]},
+{"id":"noella-laroque","names":{"given":["Noëlla"],"surnameAtBirth":"La Rocque","display":"Noëlla La Rocque","alternate":["Laroque","Larocque"]},"sex":"female","living":false,"birth":{"date":{"value":"1927","precision":"year"}},"death":{"date":{"value":"2015","precision":"year"},"sourceIds":["obit-noella"]},"residences":[],"biography":{"summary":"Grand-mère paternelle; fille de Paul-Émile La Rocque et de Marie-Marguerite Beaudin."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["obit-noella"]},
+{"id":"jean-marie-poulin","names":{"given":["Jean-Marie"],"surnameAtBirth":"Poulin","display":"Jean-Marie Poulin","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1929","precision":"year"}},"death":{"date":{"value":"2020","precision":"year"}},"residences":[],"biography":{"summary":"Grand-père maternel de Charles Blouin."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["obit-jean-marie"]},
+{"id":"gerard-poulin","names":{"given":["Gérard"],"surnameAtBirth":"Poulin","display":"Gérard Poulin","alternate":[]},"sex":"male","living":false,"death":null,"residences":[],"biography":{"summary":"Père de Jean-Marie Poulin."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["obit-jean-marie"]},
+{"id":"germaine-gaudreault","names":{"given":["Germaine"],"surnameAtBirth":"Gaudreault","display":"Germaine Gaudreault","alternate":[]},"sex":"female","living":false,"death":null,"residences":[],"biography":{"summary":"Mère de Jean-Marie Poulin."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["obit-jean-marie"]},
+{"id":"pierrette-beaulieu","names":{"given":["Pierrette"],"surnameAtBirth":"Beaulieu","display":"Pierrette Beaulieu","alternate":[]},"sex":"female","living":false,"death":null,"residences":[],"biography":{"summary":"Grand-mère maternelle; son décès, possiblement en 1989, reste à confirmer par un acte ou un avis original."},"photos":[],"tags":["À vérifier"],"private":false,"notes":"","sourceIds":["mesaieux-pierrette"]},
+{"id":"roger-beaulieu","names":{"given":["Roger"],"surnameAtBirth":"Beaulieu","display":"Roger Beaulieu","alternate":[]},"sex":"male","living":false,"death":{"date":{"value":"2010","precision":"year"},"sourceIds":["obit-roger-beaulieu"]},"residences":[],"biography":{"summary":"Frère de Pierrette Beaulieu; son avis de décès désigne Jean-Marie Poulin comme beau-frère et Pierrette comme décédée."},"photos":[],"tags":[],"private":false,"notes":"Parents non identifiés à ce stade.","sourceIds":["obit-roger-beaulieu"]},
+{"id":"denise-beaulieu","names":{"given":["Denise"],"surnameAtBirth":"Beaulieu","display":"Denise Beaulieu","alternate":[]},"sex":"female","living":false,"death":null,"residences":[],"biography":{"summary":"Sœur signalée de Pierrette Beaulieu."},"photos":[],"tags":["À vérifier"],"private":false,"notes":"Parents non identifiés à ce stade.","sourceIds":["obit-roger-beaulieu"]},
+{"id":"jean-baptiste-blouin","names":{"given":["Jean-Baptiste"],"surnameAtBirth":"Blouin","display":"Jean-Baptiste Blouin","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1898","precision":"year"}},"death":{"date":{"value":"1979","precision":"year"}},"residences":[],"biography":{"summary":"Arrière-grand-père paternel; époux d’Irma Vaillancourt."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["obit-jean-paul"]},
+{"id":"irma-vaillancourt","names":{"given":["Irma"],"surnameAtBirth":"Vaillancourt","display":"Irma Vaillancourt","alternate":[]},"sex":"female","living":false,"birth":{"date":{"value":"1902-08-22","precision":"day"},"place":{"name":"Saint-Jean, île d’Orléans, Québec"}},"death":{"date":{"value":"2003","precision":"year"}},"residences":[],"biography":{"summary":"Arrière-grand-mère paternelle, née à Saint-Jean, île d’Orléans."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["association-vaillancourt","mesaieux-amanda"]},
+{"id":"paul-emile-laroque","names":{"given":["Paul-Émile"],"surnameAtBirth":"La Rocque","display":"Paul-Émile La Rocque","alternate":["Larocque"]},"sex":"male","living":false,"death":null,"residences":[],"biography":{"summary":"Arrière-grand-père paternel de la branche La Rocque."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["obit-noella"]},
+{"id":"marguerite-beaudin","names":{"given":["Marie-Marguerite","Margarette"],"surnameAtBirth":"Beaudin","display":"Marie-Marguerite « Margarette » Beaudin","alternate":["Marguerite Beaudin","Margaret Beaudoin"]},"sex":"female","living":false,"birth":{"date":{"value":"1888-06-12","precision":"day"},"place":{"name":"Grande-Rivière, Québec"}},"death":{"date":{"value":"1953","precision":"year"}},"residences":[],"biography":{"summary":"Arrière-grand-mère paternelle. Milieu probablement bilingue; l’anglais comme langue principale du foyer n’est pas confirmé.","stories":[{"title":"Ascendance","text":"Ascendance irlandaise documentée par les familles O’Sullivan et McGinnis; origine écossaise possible par Christina McKinnon, sans preuve originale définitive; racines jersiaises par Abraham Trachy.","sourceIds":["nosorigines-trachy","nosorigines-sullivan","jerripedia-trachy"]}]},"photos":[],"tags":["Ascendance irlandaise","Piste écossaise à vérifier"],"private":false,"notes":"","sourceIds":["obit-noella","nosorigines-trachy"]},
+{"id":"pierre-blouin-1860","names":{"given":["Pierre"],"surnameAtBirth":"Blouin","display":"Pierre Blouin","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1860","precision":"year"}},"death":null,"residences":[],"biography":{"summary":"Père de Jean-Baptiste Blouin."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["obit-jean-paul"]},
+{"id":"eugenie-delisle","names":{"given":["Eugénie"],"surnameAtBirth":"Delisle","display":"Eugénie Delisle","alternate":[]},"sex":"female","living":false,"death":null,"residences":[],"biography":{"summary":"Mère de Jean-Baptiste Blouin."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["obit-jean-paul"]},
+{"id":"jean-napoleon-vaillancourt","names":{"given":["Jean","Napoléon"],"surnameAtBirth":"Vaillancourt","display":"Jean Napoléon Vaillancourt","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1878-10-22","precision":"day"},"place":{"name":"Sainte-Famille, île d’Orléans, Québec"}},"death":null,"residences":[],"biography":{"summary":"Père d’Irma Vaillancourt; fils de Laurent Vaillancourt et Apolline Gosselin selon les données consultées."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["genealogiequebec-vaillancourt"]},
+{"id":"laurent-vaillancourt","names":{"given":["Laurent"],"surnameAtBirth":"Vaillancourt","display":"Laurent Vaillancourt","alternate":[]},"sex":"male","living":false,"death":null,"residences":[],"biography":{"summary":"Père de Jean Napoléon Vaillancourt."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["genealogiequebec-vaillancourt"]},
+{"id":"apolline-gosselin","names":{"given":["Apolline"],"surnameAtBirth":"Gosselin","display":"Apolline Gosselin","alternate":[]},"sex":"female","living":false,"death":null,"residences":[],"biography":{"summary":"Mère de Jean Napoléon Vaillancourt."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["genealogiequebec-vaillancourt"]},
+{"id":"marie-amanda-lapointe","names":{"given":["Marie-Amanda"],"surnameAtBirth":"Lapointe","display":"Marie-Amanda Lapointe","alternate":[]},"sex":"female","living":false,"death":null,"residences":[],"biography":{"summary":"Mère d’Irma Vaillancourt. Ses parents restent à confirmer dans l’acte de mariage de 1901."},"photos":[],"tags":["À vérifier"],"private":false,"notes":"","sourceIds":["mesaieux-amanda"]},
+{"id":"josephat-beaudin","names":{"given":["Josephat"],"surnameAtBirth":"Beaudin","display":"Josephat Beaudin","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1860","precision":"decade","qualifier":"about"},"place":{"name":"Grande-Rivière, Québec"}},"death":{"date":{"value":"1936","precision":"year"}},"residences":[],"biography":{"summary":"Père de Marie-Marguerite Beaudin; issu d’une famille canadienne-française de Grande-Rivière."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["nosorigines-trachy"]},
+{"id":"mary-jane-trachy","names":{"given":["Mary-Jane"],"surnameAtBirth":"Trachy","display":"Mary-Jane Trachy","alternate":["Marie-Jeanne Trachy","Geneviève Trachy"]},"sex":"female","living":false,"birth":{"date":{"value":"1857","precision":"year"}},"death":{"date":{"value":"1913","precision":"year"}},"residences":[],"biography":{"summary":"Mère de Marie-Marguerite Beaudin. Elle signait « Mary-Jane »; ses racines familiales comprennent l’Irlande et Jersey."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["nosorigines-trachy"]},
+{"id":"pierre-blouin-1826","names":{"given":["Pierre"],"surnameAtBirth":"Blouin","display":"Pierre Blouin","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1826","precision":"year"}},"death":{"date":{"value":"1914","precision":"year"}},"residences":[],"biography":{"summary":"Fils de Charles Blouin (1784–1852)."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["nosorigines-pierre"]},
+{"id":"charles-blouin-1784","names":{"given":["Charles"],"surnameAtBirth":"Blouin","display":"Charles Blouin","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1784-12-31","precision":"day"},"place":{"name":"Saint-Jean, île d’Orléans, Québec"}},"death":{"date":{"value":"1852","precision":"year"}},"occupations":[{"title":"Cultivateur"}],"residences":[],"biography":{"summary":"Ancêtre direct; fils de Charles Blouin et Charlotte Thivierge."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["nosorigines-pierre"]},
+{"id":"charles-blouin-1755","names":{"given":["Charles"],"surnameAtBirth":"Blouin","display":"Charles Blouin","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1755-03-25","precision":"day"},"place":{"name":"Saint-Jean, île d’Orléans, Québec"}},"death":{"date":{"value":"1828","precision":"year"}},"occupations":[{"title":"Agriculteur"}],"residences":[],"biography":{"summary":"Ancêtre direct; époux de Charlotte Thivierge."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["nosorigines-charles"]},
+{"id":"charlotte-thivierge","names":{"given":["Charlotte"],"surnameAtBirth":"Thivierge","display":"Charlotte Thivierge","alternate":[]},"sex":"female","living":false,"death":null,"residences":[],"biography":{"summary":"Épouse de Charles Blouin (1755–1828)."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["nosorigines-charles"]},
+{"id":"jacques-blouin-1716","names":{"given":["Jacques"],"surnameAtBirth":"Blouin","display":"Jacques Blouin","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1716","precision":"year"}},"death":{"date":{"value":"1768","precision":"year"}},"residences":[],"biography":{"summary":"Père de Charles Blouin (1755–1828)."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["nosorigines-charles"]},
+{"id":"marie-catherine-gosselin","names":{"given":["Marie-Catherine"],"surnameAtBirth":"Gosselin","display":"Marie-Catherine Gosselin","alternate":[]},"sex":"female","living":false,"death":null,"residences":[],"biography":{"summary":"Mère de Charles Blouin (1755–1828)."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["nosorigines-charles"]},
+{"id":"jacques-blouin-1676","names":{"given":["Jacques"],"surnameAtBirth":"Blouin","display":"Jacques Blouin","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1676","precision":"year"}},"death":{"date":{"value":"1744","precision":"year"}},"residences":[],"biography":{"summary":"Fils d’Émery Blouin et de Marie Carreau."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["patrie-emery"]},
+{"id":"emery-blouin","names":{"given":["Émery"],"surnameAtBirth":"Blouin","display":"Émery Blouin","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1640","precision":"decade","qualifier":"about"}},"death":{"date":{"value":"1707","precision":"year"}},"residences":[],"biography":{"summary":"Ancêtre commun des branches Blouin directes et de celle du député."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["patrie-emery"]},
+{"id":"marie-carreau","names":{"given":["Marie"],"surnameAtBirth":"Carreau","display":"Marie Carreau","alternate":[]},"sex":"female","living":false,"birth":{"date":{"value":"1655","precision":"year"}},"death":{"date":{"value":"1722","precision":"year"}},"residences":[],"biography":{"summary":"Épouse d’Émery Blouin."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["patrie-emery"]},
+{"id":"abraham-trachy-1825","names":{"given":["Abraham"],"surnameAtBirth":"Trachy","display":"Abraham Trachy","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1825","precision":"year"}},"death":{"date":{"value":"1912","precision":"year"}},"residences":[],"biography":{"summary":"Père de Mary-Jane Trachy."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["nosorigines-trachy"]},
+{"id":"mary-ann-sullivan","names":{"given":["Mary-Ann"],"surnameAtBirth":"Sullivan","display":"Mary-Ann Sullivan","alternate":[]},"sex":"female","living":false,"birth":{"date":{"value":"1831","precision":"year"},"place":{"name":"Bonaventure, Québec"}},"death":{"date":{"value":"1921","precision":"year"}},"residences":[],"biography":{"summary":"Mère de Mary-Jane Trachy; fille de Michael O’Sullivan et Mary-Margaret McGinnis."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["nosorigines-sullivan"]},
+{"id":"abraham-trachy-1794","names":{"given":["Abraham"],"surnameAtBirth":"Trachy","display":"Abraham Trachy","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1794","precision":"year"},"place":{"name":"Jersey (selon les généalogies)"}},"death":{"date":{"value":"1871","precision":"year"}},"residences":[],"biography":{"summary":"Arrivé en Gaspésie vers 1819 selon une compilation familiale; à corroborer par les registres de Jersey."},"photos":[],"tags":["À vérifier"],"private":false,"notes":"","sourceIds":["jerripedia-trachy"]},
+{"id":"louise-bourget","names":{"given":["Louise"],"surnameAtBirth":"Bourget","display":"Louise Bourget","alternate":[]},"sex":"female","living":false,"death":null,"residences":[],"biography":{"summary":"Épouse d’Abraham Trachy."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["jerripedia-trachy"]},
+{"id":"michael-osullivan","names":{"given":["Michael"],"surnameAtBirth":"O’Sullivan","display":"Michael O’Sullivan","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1777","precision":"decade","qualifier":"about"},"place":{"name":"Irlande"}},"death":{"date":{"value":"1862","precision":"year"}},"occupations":[{"title":"Agriculteur","organization":"Port-Daniel"}],"residences":[],"biography":{"summary":"Ascendance irlandaise documentée par les transcriptions généalogiques; mariage anglican à New Carlisle en 1821."},"photos":[],"tags":["Ascendance irlandaise"],"private":false,"notes":"","sourceIds":["nosorigines-sullivan"]},
+{"id":"mary-margaret-mcginnis","names":{"given":["Mary-Margaret"],"surnameAtBirth":"McGinnis","display":"Mary-Margaret McGinnis","alternate":[]},"sex":"female","living":false,"birth":{"date":{"value":"1794","precision":"decade","qualifier":"about"},"place":{"name":"Irlande"}},"death":{"date":{"value":"1882","precision":"year"}},"residences":[],"biography":{"summary":"Ascendance irlandaise documentée; fille attribuée à Fergus McGinnis et Christina McKinnon."},"photos":[],"tags":["Ascendance irlandaise"],"private":false,"notes":"","sourceIds":["nosorigines-sullivan"]},
+{"id":"fergus-mcginnis","names":{"given":["Fergus"],"surnameAtBirth":"McGinnis","display":"Fergus McGinnis","alternate":[]},"sex":"male","living":false,"death":null,"residences":[],"biography":{"summary":"Père attribué de Mary-Margaret McGinnis; à confirmer par acte original."},"photos":[],"tags":["À vérifier"],"private":false,"notes":"","sourceIds":["nosorigines-sullivan"]},
+{"id":"christina-mckinnon","names":{"given":["Christina"],"surnameAtBirth":"McKinnon","display":"Christina McKinnon","alternate":[]},"sex":"female","living":false,"death":null,"residences":[],"biography":{"summary":"Mère attribuée de Mary-Margaret McGinnis. Une origine écossaise est plausible, mais non démontrée par un acte original."},"photos":[],"tags":["Piste écossaise","À vérifier"],"private":false,"notes":"","sourceIds":["nosorigines-sullivan"]},
+{"id":"charles-blouin-depute","names":{"given":["Charles"],"surnameAtBirth":"Blouin","display":"Charles Blouin, député d’Orléans","alternate":[]},"sex":"male","living":false,"birth":{"date":{"value":"1753","precision":"year"},"place":{"name":"Saint-Jean, île d’Orléans, Québec"}},"death":{"date":{"value":"1844","precision":"year"}},"occupations":[{"title":"Cultivateur"},{"title":"Capitaine de milice","from":"1809"},{"title":"Député d’Orléans à la Chambre d’assemblée du Bas-Canada","from":"1810","to":"1818","notes":"Élu en 1810; réélu en 1814 et 1816; Parti canadien."}],"residences":[],"biography":{"summary":"Parent collatéral, et non ancêtre direct identifié, des deux Charles Blouin de la lignée paternelle."},"photos":[],"tags":[],"private":false,"notes":"","sourceIds":["assnat-charles-blouin"]}
 ]
