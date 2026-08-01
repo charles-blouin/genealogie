@@ -1,0 +1,38 @@
+[
+  {
+    "id": "charles-blouin",
+    "names": {
+      "given": ["Charles"],
+      "surnameAtBirth": "Blouin",
+      "display": "Charles Blouin",
+      "alternate": []
+    },
+    "living": true,
+    "death": null,
+    "private": true
+  },
+  {
+    "id": "rene-blouin",
+    "names": {
+      "given": ["René"],
+      "surnameAtBirth": "Blouin",
+      "display": "René Blouin",
+      "alternate": []
+    },
+    "living": true,
+    "death": null,
+    "private": true
+  },
+  {
+    "id": "nicole-poulin",
+    "names": {
+      "given": ["Nicole"],
+      "surnameAtBirth": "Poulin",
+      "display": "Nicole Poulin",
+      "alternate": []
+    },
+    "living": true,
+    "death": null,
+    "private": true
+  }
+]
