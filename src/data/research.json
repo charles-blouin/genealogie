@@ -1,0 +1,136 @@
+[
+  {
+    "personId": "irma-vaillancourt",
+    "stories": [
+      {
+        "title": "Une famille de treize enfants",
+        "text": "Irma Vaillancourt a épousé Jean-Baptiste Blouin en 1922 à Saint-Jean, île d’Orléans. Les publications familiales indiquent que le couple a eu treize enfants, ce qui situe leur vie familiale dans le modèle encore fréquent des grandes familles rurales québécoises du début du XXe siècle.",
+        "sourceIds": ["association-vaillancourt"],
+        "confidence": "probable"
+      },
+      {
+        "title": "Une longévité exceptionnelle",
+        "text": "Née en 1902, Irma a vécu jusqu’en 2003 et a donc traversé presque tout le XXe siècle, de la société rurale de l’île d’Orléans à l’époque contemporaine.",
+        "sourceIds": ["association-vaillancourt"],
+        "confidence": "confirmed"
+      }
+    ],
+    "researchQuestions": [
+      "Retrouver l’acte de mariage original de 1922 avec Jean-Baptiste Blouin.",
+      "Identifier les treize enfants à partir des registres et des avis de décès.",
+      "Retrouver le recensement de 1921 ou 1931 pour documenter le foyer."
+    ]
+  },
+  {
+    "personId": "marguerite-beaudin",
+    "stories": [
+      {
+        "title": "Un foyer probablement bilingue",
+        "text": "Sa mère, Mary-Jane Trachy, utilisait et signait son prénom anglais. Les branches Sullivan, McGinnis et Trachy relient la famille à l’Irlande et à Jersey. Cela rend un environnement bilingue très plausible, sans toutefois prouver que l’anglais était la langue principale du foyer.",
+        "sourceIds": ["nosorigines-trachy", "nosorigines-sullivan", "jerripedia-trachy"],
+        "confidence": "probable"
+      },
+      {
+        "title": "Une ascendance irlandaise et jersiaise",
+        "text": "La lignée maternelle de Marguerite remonte à Michael O’Sullivan et Mary-Margaret McGinnis, décrits comme nés en Irlande, ainsi qu’à Abraham Trachy, associé à Jersey et à l’établissement de sa famille en Gaspésie.",
+        "sourceIds": ["nosorigines-sullivan", "jerripedia-trachy"],
+        "confidence": "probable"
+      }
+    ],
+    "researchQuestions": [
+      "Consulter le recensement de 1901 pour vérifier les langues parlées par chaque membre du foyer.",
+      "Retrouver l’acte de baptême de 1888 et l’acte de mariage de 1913.",
+      "Chercher des signatures originales de Marguerite et de Mary-Jane."
+    ]
+  },
+  {
+    "personId": "mary-jane-trachy",
+    "stories": [
+      {
+        "title": "Mary-Jane plutôt que Marie-Jeanne",
+        "text": "Les compilations indiquent qu’elle signait Mary-Jane, même si certains curés francisaient son prénom dans les registres. Ce détail est un indice concret de l’influence anglophone dans sa vie familiale.",
+        "sourceIds": ["nosorigines-trachy"],
+        "confidence": "probable"
+      }
+    ],
+    "researchQuestions": [
+      "Obtenir une image d’un acte portant sa signature.",
+      "Comparer les déclarations linguistiques des recensements de 1881, 1891 et 1901."
+    ]
+  },
+  {
+    "personId": "michael-osullivan",
+    "stories": [
+      {
+        "title": "Un mariage anglican, puis une présence catholique",
+        "text": "Michael O’Sullivan et Mary-Margaret McGinnis se seraient mariés à l’église anglicane de New Carlisle en 1821. Une validation ou nouvelle célébration catholique est aussi signalée plus tard, un parcours religieux qui mérite d’être confirmé dans les registres originaux.",
+        "sourceIds": ["nosorigines-sullivan"],
+        "confidence": "probable"
+      }
+    ],
+    "researchQuestions": [
+      "Retrouver l’acte anglican de mariage du 24 novembre 1821.",
+      "Retrouver l’acte catholique mentionné en 1836.",
+      "Identifier son lieu précis de naissance en Irlande."
+    ]
+  },
+  {
+    "personId": "abraham-trachy-1794",
+    "stories": [
+      {
+        "title": "De Jersey à la Gaspésie",
+        "text": "Une histoire familiale rapporte qu’Abraham Trachy, forgeron, a quitté Jersey pour la Gaspésie vers 1819. Cette migration cadre avec les liens commerciaux historiques entre Jersey et les pêcheries gaspésiennes, mais doit encore être corroborée par les registres originaux.",
+        "sourceIds": ["jerripedia-trachy"],
+        "confidence": "probable"
+      }
+    ],
+    "researchQuestions": [
+      "Retrouver son baptême à Jersey.",
+      "Identifier un document d’arrivée ou un premier acte en Gaspésie.",
+      "Confirmer son métier de forgeron dans un acte original."
+    ]
+  },
+  {
+    "personId": "emery-blouin",
+    "stories": [
+      {
+        "title": "Un pionnier de l’île d’Orléans",
+        "text": "Émery, ou Méry, Blouin est présenté dans les compilations comme un immigrant du Poitou arrivé en Nouvelle-France vers 1664, puis établi à Saint-Jean, île d’Orléans. Il est l’ancêtre commun de plusieurs branches Blouin de l’île.",
+        "sourceIds": ["patrie-emery"],
+        "confidence": "probable"
+      }
+    ],
+    "researchQuestions": [
+      "Remplacer l’arbre compilé par les actes de mariage, baptême et sépulture originaux.",
+      "Vérifier le lieu exact de naissance en France.",
+      "Documenter sa concession de terre et ses activités à Saint-Jean."
+    ]
+  },
+  {
+    "personId": "charles-blouin-1755",
+    "stories": [
+      {
+        "title": "Le premier Charles de la lignée directe",
+        "text": "Né en 1755 à Saint-Jean, île d’Orléans, ce Charles Blouin est le père du Charles né en 1784. Les deux homonymes successifs expliquent probablement une partie de la tradition familiale autour des « deux Charles ».",
+        "sourceIds": ["nosorigines-charles", "nosorigines-pierre"],
+        "confidence": "probable"
+      }
+    ],
+    "researchQuestions": ["Retrouver ses actes de baptême, mariage et sépulture originaux."]
+  },
+  {
+    "personId": "charles-blouin-depute",
+    "stories": [
+      {
+        "title": "Député du Bas-Canada",
+        "text": "Charles Blouin a représenté le comté d’Orléans à la Chambre d’assemblée du Bas-Canada. Élu en 1810, puis réélu en 1814 et 1816, il appuyait le Parti canadien. Il appartient à une branche collatérale de la famille Blouin et n’est pas actuellement identifié comme ancêtre direct.",
+        "sourceIds": ["assnat-charles-blouin"],
+        "confidence": "confirmed"
+      }
+    ],
+    "researchQuestions": [
+      "Documenter précisément le lien génération par génération entre sa branche et Émery Blouin.",
+      "Vérifier si un second lien vers lui existe dans une branche féminine de l’arbre."
+    ]
+  }
+]
