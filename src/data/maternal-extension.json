@@ -1,0 +1,206 @@
+{
+  "people": [
+    {
+      "id": "sylvie-poulin-1957",
+      "names": {
+        "given": ["Sylvie"],
+        "surnameAtBirth": "Poulin",
+        "display": "Sylvie Poulin",
+        "alternate": []
+      },
+      "sex": "female",
+      "living": false,
+      "birth": {
+        "date": {
+          "value": "1957",
+          "precision": "year"
+        }
+      },
+      "death": {
+        "date": {
+          "value": "2006-03-11",
+          "precision": "day"
+        },
+        "place": {
+          "name": "Maison Michel-Sarrazin, Québec"
+        },
+        "sourceIds": ["mesaieux-sylvie-poulin"]
+      },
+      "residences": [],
+      "biography": {
+        "summary": "Fille de Jean-Marie Poulin et de Pierrette Beaulieu. Son avis de décès constitue aussi un repère chronologique pour la famille, puisqu’il désigne Pierrette comme déjà décédée en mars 2006."
+      },
+      "photos": [],
+      "tags": ["Branche maternelle", "Famille Poulin"],
+      "private": false,
+      "notes": "Les noms de ses proches vivants ne sont pas reproduits dans cet arbre public.",
+      "sourceIds": ["mesaieux-sylvie-poulin"]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "maternal-p1",
+      "type": "biological-parent",
+      "personIds": ["jean-marie-poulin", "sylvie-poulin-1957"],
+      "sourceIds": ["mesaieux-sylvie-poulin"]
+    },
+    {
+      "id": "maternal-p2",
+      "type": "biological-parent",
+      "personIds": ["pierrette-beaulieu", "sylvie-poulin-1957"],
+      "sourceIds": ["mesaieux-sylvie-poulin"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "obit-isabelle-allaire",
+      "type": "avis de décès",
+      "title": "Avis de décès d’Isabelle Allaire, épouse de Roger Beaulieu",
+      "repository": "Coopérative funéraire des Deux Rives",
+      "url": "https://coopfuneraire2rives.com/avis-de-deces/isabelle-beaulieu-nee-allaire-4734",
+      "accessed": "2026-08-01",
+      "evidenceType": "secondary",
+      "confidence": "confirmed",
+      "notes": "Confirme que Denise Beaulieu, épouse de Clermont Lelièvre, et Pierrette Beaulieu, épouse de Jean-Marie Poulin, étaient les belles-sœurs d’Isabelle et donc les sœurs de Roger Beaulieu."
+    },
+    {
+      "id": "mesaieux-roger-beaulieu",
+      "type": "index civil",
+      "title": "Fiche de Roger Beaulieu — mariage avec Isabelle Allaire en 1953",
+      "repository": "MesAieux",
+      "url": "https://www.mesaieux.com/genealogie/roger_beaulieu",
+      "accessed": "2026-08-01",
+      "evidenceType": "compiled",
+      "confidence": "probable",
+      "notes": "Index utile pour localiser l’acte; l’original doit être consulté avant d’en tirer les noms des parents."
+    },
+    {
+      "id": "mesaieux-denise-beaulieu",
+      "type": "index civil",
+      "title": "Fiche de Denise Beaulieu — mariage avec Clermont Lelièvre en 1949",
+      "repository": "MesAieux",
+      "url": "https://www.mesaieux.com/genealogie/denise_beaulieu",
+      "accessed": "2026-08-01",
+      "evidenceType": "compiled",
+      "confidence": "probable",
+      "notes": "Index utile pour localiser l’acte de mariage célébré à Québec; l’acte original devrait nommer les parents."
+    },
+    {
+      "id": "mesaieux-sylvie-poulin",
+      "type": "nécrologie transcrite",
+      "title": "Nécrologie de Sylvie Poulin (1957–2006)",
+      "repository": "MesAieux",
+      "url": "https://www.mesaieux.com/genealogie/sylvie_poulin",
+      "accessed": "2026-08-01",
+      "evidenceType": "secondary",
+      "confidence": "probable",
+      "notes": "La transcription la donne comme fille de Jean-Marie Poulin et de feu Pierrette Beaulieu et situe son décès au 11 mars 2006."
+    },
+    {
+      "id": "lac-census-1931-guide",
+      "type": "guide de recherche",
+      "title": "Recensement du Canada de 1931",
+      "repository": "Bibliothèque et Archives Canada",
+      "url": "https://www.canada.ca/fr/bibliotheque-archives/collection/aide-recherche-genealogie-histoire-famille/recensements/dominion-canada/1931.html",
+      "accessed": "2026-08-01",
+      "evidenceType": "research-guide",
+      "confidence": "confirmed",
+      "notes": "Le recensement peut établir un foyer et des liens familiaux, mais les homonymes et erreurs de transcription exigent une validation par les actes."
+    },
+    {
+      "id": "family-memory-pierrette-death",
+      "type": "tradition familiale",
+      "title": "Souvenir familial concernant le décès de Pierrette Beaulieu",
+      "evidenceType": "family-tradition",
+      "confidence": "hypothesis",
+      "notes": "Un souvenir familial situe possiblement le décès en 1989. Aucun acte ni avis public correspondant n’a encore été retrouvé."
+    }
+  ],
+  "research": [
+    {
+      "personId": "pierrette-beaulieu",
+      "stories": [
+        {
+          "title": "Mariage à Québec en 1953",
+          "text": "Un index civil répertorie le mariage de Jean-Marie Poulin et Pierrette Beaulieu à Québec en 1953. La date précise, la paroisse et surtout les noms des parents doivent encore être relevés dans l’acte original.",
+          "sourceIds": ["mesaieux-pierrette"],
+          "confidence": "probable"
+        },
+        {
+          "title": "Une fratrie confirmée par plusieurs avis de décès",
+          "text": "Roger Beaulieu, Denise Beaulieu et Pierrette Beaulieu appartenaient à la même fratrie. L’avis de Roger nomme Denise et le couple Jean-Marie Poulin–Pierrette Beaulieu; celui d’Isabelle Allaire, épouse de Roger, confirme encore Denise et Pierrette comme ses belles-sœurs.",
+          "sourceIds": ["obit-roger-beaulieu", "obit-isabelle-allaire"],
+          "confidence": "confirmed"
+        },
+        {
+          "title": "Trois mariages à Québec en quelques années",
+          "text": "Les index civils placent le mariage de Denise avec Clermont Lelièvre à Québec en 1949, puis ceux de Roger avec Isabelle Allaire et de Pierrette avec Jean-Marie Poulin à Québec en 1953. Cette concentration suggère que la fratrie vivait alors dans la région de Québec, sans suffire à établir son lieu de naissance.",
+          "sourceIds": ["mesaieux-denise-beaulieu", "mesaieux-roger-beaulieu", "mesaieux-pierrette"],
+          "confidence": "probable"
+        },
+        {
+          "title": "Un décès possiblement survenu en 1989",
+          "text": "La mémoire familiale situe possiblement le décès de Pierrette en 1989. Ce millésime reste hypothétique. La nécrologie de sa fille Sylvie permet seulement d’établir avec certitude que Pierrette était décédée avant le 11 mars 2006.",
+          "sourceIds": ["family-memory-pierrette-death", "mesaieux-sylvie-poulin"],
+          "confidence": "hypothesis"
+        }
+      ],
+      "researchQuestions": [
+        "Obtenir l’acte original du mariage de Jean-Marie Poulin et Pierrette Beaulieu, célébré à Québec en 1953; il devrait identifier les deux parents de Pierrette et permettre de poursuivre la lignée maternelle.",
+        "Obtenir les actes originaux des mariages de Denise Beaulieu en 1949 et de Roger Beaulieu en 1953; les trois actes devraient répéter les mêmes parents et fournir un contrôle indépendant.",
+        "Retrouver l’acte ou l’avis de décès de Pierrette afin de vérifier le souvenir familial de 1989 et d’établir le lieu de sépulture.",
+        "Comparer les candidates Pierrette Beaulieu des recensements de 1931 à Saint-Ulric et à Grand-Mère seulement après avoir obtenu les noms de ses parents; ne pas fusionner ces personnes sur la seule base du prénom et de l’âge."
+      ]
+    },
+    {
+      "personId": "roger-beaulieu",
+      "stories": [
+        {
+          "title": "Un frère qui confirme la structure familiale",
+          "text": "Roger Beaulieu est décédé à Québec le 1er octobre 2010, à 82 ans. Son avis de décès nomme son épouse Isabelle Allaire, sa sœur Denise et son beau-frère Jean-Marie Poulin, veuf de Pierrette Beaulieu. Cette notice est la meilleure preuve publique actuellement disponible pour relier les trois enfants Beaulieu.",
+          "sourceIds": ["obit-roger-beaulieu"],
+          "confidence": "confirmed"
+        },
+        {
+          "title": "Mariage à Québec",
+          "text": "Un index civil situe son mariage avec Isabelle Allaire à Québec en 1953, la même année que le mariage de Pierrette avec Jean-Marie Poulin.",
+          "sourceIds": ["mesaieux-roger-beaulieu"],
+          "confidence": "probable"
+        }
+      ],
+      "researchQuestions": [
+        "Obtenir l’acte original du mariage de 1953 afin d’identifier ses parents et de confirmer ceux de Pierrette.",
+        "Retrouver son acte de naissance, probablement vers 1927 ou 1928 d’après son âge au décès."
+      ]
+    },
+    {
+      "personId": "denise-beaulieu",
+      "stories": [
+        {
+          "title": "Mariage avec Clermont Lelièvre",
+          "text": "Un index civil répertorie le mariage de Denise Beaulieu et Clermont Lelièvre à Québec en 1949. Les avis de décès ultérieurs les désignent tous deux comme décédés et confirment Denise comme sœur de Roger et de Pierrette.",
+          "sourceIds": ["mesaieux-denise-beaulieu", "obit-roger-beaulieu", "obit-isabelle-allaire"],
+          "confidence": "probable"
+        }
+      ],
+      "researchQuestions": [
+        "Obtenir l’acte original du mariage de 1949, probablement la pièce la plus ancienne des trois mariages de la fratrie.",
+        "Retrouver son avis de décès pour établir ses dates de naissance et de décès."
+      ]
+    },
+    {
+      "personId": "sylvie-poulin-1957",
+      "stories": [
+        {
+          "title": "Un repère pour dater le décès de sa mère",
+          "text": "La nécrologie de Sylvie Poulin indique qu’elle est décédée à 49 ans à la Maison Michel-Sarrazin et la décrit comme fille de Jean-Marie Poulin et de feu Pierrette Beaulieu. Elle prouve donc que Pierrette était décédée au plus tard en mars 2006, sans confirmer l’année 1989 transmise dans la famille.",
+          "sourceIds": ["mesaieux-sylvie-poulin"],
+          "confidence": "probable"
+        }
+      ],
+      "researchQuestions": [
+        "Retrouver l’avis de décès original publié en 2006 afin de remplacer la transcription par une source de première publication."
+      ]
+    }
+  ]
+}
