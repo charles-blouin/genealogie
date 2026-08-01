@@ -21,6 +21,8 @@ interface GenealogyExtension {
 
 type ViewTab = 'tree' | 'map'
 
+const ROOT_PERSON_ID = 'charles-blouin'
+
 const extensions = [
   maternalExtensionData as GenealogyExtension,
   jeanMariePoulinExtensionData as GenealogyExtension,
@@ -80,23 +82,57 @@ const sources = [
   ...extensions.flatMap(extension => extension.sources ?? []),
 ]
 
+function formatYear(event: Person['birth'] | Person['death']) {
+  const date = event?.date
+  if (!date?.value) return null
+
+  const year = date.value.match(/\d{4}/)?.[0] ?? date.value
+  if (date.qualifier === 'before') return `av. ${year}`
+  if (date.qualifier === 'after') return `ap. ${year}`
+  if (date.qualifier === 'between' && date.endValue) {
+    const endYear = date.endValue.match(/\d{4}/)?.[0] ?? date.endValue
+    return `${year}–${endYear}`
+  }
+  if (date.qualifier === 'about' || date.qualifier === 'estimated' || date.precision === 'decade') {
+    return `v. ${year}`
+  }
+  return year
+}
+
+function lifeSpan(person: Person) {
+  const birth = formatYear(person.birth)
+  const death = formatYear(person.death)
+
+  if (person.living) return birth ? `${birth}–` : 'vivant'
+  if (birth && death) return `${birth}–${death}`
+  if (birth) return `${birth}–?`
+  if (death) return `?–${death}`
+  return 'dates inconnues'
+}
+
 export default function App() {
-  const [rootId, setRootId] = useState('charles-blouin')
   const [query, setQuery] = useState('')
   const [activeTab, setActiveTab] = useState<ViewTab>('tree')
+  const [focusPersonId, setFocusPersonId] = useState<string | null>(null)
 
   const matches = useMemo(
     () =>
       query.trim()
-        ? people.filter(person =>
-            person.names.display.toLowerCase().includes(query.toLowerCase()),
-          )
+        ? people
+            .filter(person =>
+              person.names.display.toLowerCase().includes(query.toLowerCase()),
+            )
+            .sort((a, b) => {
+              const nameComparison = a.names.display.localeCompare(b.names.display, 'fr')
+              if (nameComparison !== 0) return nameComparison
+              return (formatYear(a.birth) ?? '').localeCompare(formatYear(b.birth) ?? '')
+            })
         : [],
     [query],
   )
 
   function openPersonInTree(personId: string) {
-    setRootId(personId)
+    setFocusPersonId(personId)
     setActiveTab('tree')
   }
 
@@ -123,7 +159,8 @@ export default function App() {
                     setQuery('')
                   }}
                 >
-                  {person.names.display}
+                  <span className="search-result__name">{person.names.display}</span>
+                  <span className="search-result__dates">{lifeSpan(person)}</span>
                 </button>
               ))}
             </div>
@@ -155,7 +192,8 @@ export default function App() {
           people={people}
           relationships={relationships}
           sources={sources}
-          rootId={rootId}
+          rootId={ROOT_PERSON_ID}
+          focusPersonId={focusPersonId}
         />
       ) : (
         <GenealogyMap
