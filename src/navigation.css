@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: baseline;
-  gap: .75rem;
+  column-gap: 1.1rem;
+  row-gap: .2rem;
 }
 
 .search-result__name {
@@ -12,9 +13,17 @@
 }
 
 .search-result__dates {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .45rem;
   color: #756a60;
   font-size: .82rem;
   white-space: nowrap;
+}
+
+.search-result__dates::before {
+  content: '—';
+  color: #b2a497;
 }
 
 .is-focused-person > .tree-person .person-card {
@@ -49,7 +58,7 @@
 
 @media (max-width: 700px) {
   .search-results button {
-    gap: .4rem;
+    column-gap: .8rem;
   }
 
   .search-result__dates {
