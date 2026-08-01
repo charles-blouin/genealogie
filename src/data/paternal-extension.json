@@ -1,0 +1,628 @@
+{
+  "people": [
+    {
+      "id": "philomene-fortier-1836",
+      "names": {"given": ["Philomène"], "surnameAtBirth": "Fortier", "display": "Philomène Fortier", "alternate": []},
+      "sex": "female",
+      "living": false,
+      "birth": {"date": {"value": "1836", "precision": "year"}},
+      "death": null,
+      "residences": [],
+      "biography": {"summary": "Épouse de Pierre Blouin (1826–1914) et mère de Pierre Blouin (1860–1923). Ses parents ne sont pas encore identifiés avec certitude."},
+      "photos": [],
+      "tags": ["Branche Fortier", "À vérifier"],
+      "private": false,
+      "notes": "Ne pas la confondre avec une autre Philomène Fortier née en 1841 et décédée enfant en 1845.",
+      "sourceIds": ["familysearch-pierre-blouin-1860", "familysearch-pierre-blouin-1826"]
+    },
+    {
+      "id": "denise-blouin-1938",
+      "names": {"given": ["Denise"], "surnameAtBirth": "Blouin", "display": "Denise Blouin", "alternate": ["Denise Blouin Plante"]},
+      "sex": "female",
+      "living": false,
+      "birth": {"date": {"value": "1938", "precision": "year"}},
+      "death": {"date": {"value": "2020-02-19", "precision": "day"}, "place": {"name": "Sainte-Catherine-de-la-Jacques-Cartier, Québec"}, "sourceIds": ["obit-denise-blouin"]},
+      "residences": [],
+      "biography": {"summary": "Fille de Jean-Baptiste Blouin et d’Irma Vaillancourt. Son avis de décès permet de reconstituer la fratrie de treize enfants du couple."},
+      "photos": [],
+      "tags": ["Branche Blouin", "Fratrie de treize enfants"],
+      "private": false,
+      "notes": "Les noms et détails des proches potentiellement vivants ne sont pas reproduits au-delà de ce qui est utile à l’histoire familiale.",
+      "sourceIds": ["obit-denise-blouin"]
+    },
+    {
+      "id": "jean-paul-larocque-religieux-1914",
+      "names": {"given": ["Jean-Paul"], "surnameAtBirth": "La Rocque", "display": "Frère Jean-Paul La Rocque", "alternate": ["Gustave-Joseph LaRocque"]},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1914", "precision": "year"}},
+      "death": {"date": {"value": "2008-06-18", "precision": "day"}, "place": {"name": "La Prairie, Québec"}, "sourceIds": ["obit-jean-paul-larocque"]},
+      "occupations": [{"title": "Frère enseignant", "organization": "Frères de l’Instruction chrétienne", "notes": "Soixante-dix-sept années de vie religieuse."}],
+      "residences": [],
+      "biography": {"summary": "Fils de Paul-Émile La Rocque et de Marguerite Beaudin, et frère de Noëlla. Il a vécu soixante-dix-sept années dans la vie religieuse."},
+      "photos": [],
+      "tags": ["Branche La Rocque", "Vie religieuse"],
+      "private": false,
+      "notes": "La notice publique donne aussi le nom religieux ou composé Gustave-Joseph.",
+      "sourceIds": ["obit-jean-paul-larocque"]
+    },
+    {
+      "id": "joseph-larocque-1862",
+      "names": {"given": ["Joseph"], "surnameAtBirth": "Larocque", "display": "Joseph Larocque", "alternate": ["Joseph La Rocque"]},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1862-11-23", "precision": "day"}},
+      "death": null,
+      "residences": [],
+      "biography": {"summary": "Père de Paul-Émile La Rocque; fils de Gédéon Larocque et Félicité Thibault, selon les compilations consultées."},
+      "photos": [],
+      "tags": ["Branche La Rocque"],
+      "private": false,
+      "notes": "Décès et actes originaux à retrouver.",
+      "sourceIds": ["nosorigines-larocque"]
+    },
+    {
+      "id": "adelaide-josephine-turgeon",
+      "names": {"given": ["Adélaïde-Joséphine"], "surnameAtBirth": "Turgeon", "display": "Adélaïde-Joséphine Turgeon", "alternate": []},
+      "sex": "female",
+      "living": false,
+      "death": null,
+      "residences": [],
+      "biography": {"summary": "Mère de Paul-Émile La Rocque et épouse de Joseph Larocque."},
+      "photos": [],
+      "tags": ["Branche Turgeon", "À vérifier"],
+      "private": false,
+      "notes": "Dates et parents à établir par l’acte de mariage ou les actes de baptême des enfants.",
+      "sourceIds": ["nosorigines-larocque"]
+    },
+    {
+      "id": "gedeon-larocque",
+      "names": {"given": ["Gédéon"], "surnameAtBirth": "Larocque", "display": "Gédéon Larocque", "alternate": []},
+      "sex": "male",
+      "living": false,
+      "death": null,
+      "residences": [],
+      "biography": {"summary": "Père attribué de Joseph Larocque."},
+      "photos": [],
+      "tags": ["Branche La Rocque", "À vérifier"],
+      "private": false,
+      "notes": "La génération doit être confirmée dans les actes originaux.",
+      "sourceIds": ["nosorigines-larocque"]
+    },
+    {
+      "id": "felicite-thibault",
+      "names": {"given": ["Félicité"], "surnameAtBirth": "Thibault", "display": "Félicité Thibault", "alternate": []},
+      "sex": "female",
+      "living": false,
+      "death": null,
+      "residences": [],
+      "biography": {"summary": "Mère attribuée de Joseph Larocque."},
+      "photos": [],
+      "tags": ["Branche Thibault", "À vérifier"],
+      "private": false,
+      "notes": "La génération doit être confirmée dans les actes originaux.",
+      "sourceIds": ["nosorigines-larocque"]
+    },
+    {
+      "id": "thomas-beaudin-1832",
+      "names": {"given": ["Thomas"], "surnameAtBirth": "Beaudin", "display": "Thomas Beaudin", "alternate": ["Thomas Amiot Beaudin", "Thomas Baudin"]},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1832-11-04", "precision": "day"}, "place": {"name": "Saint-Michel-de-Percé, Gaspésie, Québec"}},
+      "death": {"date": {"value": "1916-09-24", "precision": "day"}, "place": {"name": "Grande-Rivière, Gaspésie, Québec"}},
+      "residences": [],
+      "biography": {"summary": "Père de Josephat Beaudin. Il a épousé Angélique Roussy à Grande-Rivière en 1854 et a vécu jusqu’à 83 ans."},
+      "photos": [],
+      "tags": ["Branche Beaudin", "Gaspésie"],
+      "private": false,
+      "notes": "Né en novembre 1832 mais baptisé en août 1833 selon la transcription du registre.",
+      "sourceIds": ["nosorigines-thomas-beaudin"]
+    },
+    {
+      "id": "angelique-roussy-1835",
+      "names": {"given": ["Angélique"], "surnameAtBirth": "Roussy", "display": "Angélique Roussy", "alternate": []},
+      "sex": "female",
+      "living": false,
+      "birth": {"date": {"value": "1835-09-20", "precision": "day"}, "place": {"name": "Bonaventure, Québec"}},
+      "death": {"date": {"value": "1900-12-27", "precision": "day"}, "place": {"name": "Grande-Rivière, Gaspésie, Québec"}},
+      "residences": [],
+      "biography": {"summary": "Mère de Josephat Beaudin; fille d’Isaac Roussy et Suzanne Mauger."},
+      "photos": [],
+      "tags": ["Branche Roussy", "Gaspésie"],
+      "private": false,
+      "notes": "Mariée à Thomas Beaudin à 18 ans en 1854.",
+      "sourceIds": ["nosorigines-thomas-beaudin", "nosorigines-roussy-list"]
+    },
+    {
+      "id": "joseph-beaudin-1800",
+      "names": {"given": ["Joseph"], "surnameAtBirth": "Beaudin", "display": "Joseph Beaudin", "alternate": []},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1800-04-08", "precision": "day"}},
+      "death": {"date": {"value": "1872-05-15", "precision": "day"}},
+      "residences": [],
+      "biography": {"summary": "Père de Thomas Beaudin et époux d’Émérence Blais."},
+      "photos": [],
+      "tags": ["Branche Beaudin", "Gaspésie"],
+      "private": false,
+      "notes": "La filiation avec Abraham Beaudin et Marie-Anne Méthot provient d’une compilation et doit être confirmée dans l’acte de mariage.",
+      "sourceIds": ["nosorigines-thomas-beaudin", "nosorigines-marie-anne-methot"]
+    },
+    {
+      "id": "emerence-blais-1805",
+      "names": {"given": ["Émérence"], "surnameAtBirth": "Blais", "display": "Émérence Blais", "alternate": ["Marie-Émérence Blais"]},
+      "sex": "female",
+      "living": false,
+      "birth": {"date": {"value": "1805-01-05", "precision": "day"}},
+      "death": {"date": {"value": "1859-09-24", "precision": "day"}},
+      "residences": [],
+      "biography": {"summary": "Mère de Thomas Beaudin; fille attribuée de Joseph Blais et Louise Saint-Fill."},
+      "photos": [],
+      "tags": ["Branche Blais", "Gaspésie"],
+      "private": false,
+      "notes": "Filiation à confirmer dans l’acte de mariage avec Joseph Beaudin.",
+      "sourceIds": ["nosorigines-thomas-beaudin", "nosorigines-joseph-blais"]
+    },
+    {
+      "id": "abraham-beaudin-1771",
+      "names": {"given": ["Abraham"], "surnameAtBirth": "Beaudin", "display": "Abraham Beaudin", "alternate": []},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1771-04-06", "precision": "day"}},
+      "death": {"date": {"value": "1865-11-11", "precision": "day"}},
+      "residences": [],
+      "biography": {"summary": "Père attribué de Joseph Beaudin et époux de Marie-Anne Méthot."},
+      "photos": [],
+      "tags": ["Branche Beaudin", "À vérifier"],
+      "private": false,
+      "notes": "La génération est plausible mais doit être contrôlée avec les actes originaux.",
+      "sourceIds": ["nosorigines-marie-anne-methot"]
+    },
+    {
+      "id": "marie-anne-methot",
+      "names": {"given": ["Marie-Anne"], "surnameAtBirth": "Méthot", "display": "Marie-Anne Méthot", "alternate": []},
+      "sex": "female",
+      "living": false,
+      "death": null,
+      "residences": [],
+      "biography": {"summary": "Mère attribuée de Joseph Beaudin et épouse d’Abraham Beaudin."},
+      "photos": [],
+      "tags": ["Branche Méthot", "À vérifier"],
+      "private": false,
+      "notes": "Dates et parents à établir.",
+      "sourceIds": ["nosorigines-marie-anne-methot"]
+    },
+    {
+      "id": "joseph-blais-1770",
+      "names": {"given": ["Joseph"], "surnameAtBirth": "Blais", "display": "Joseph Blais", "alternate": []},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1770-10-10", "precision": "day"}},
+      "death": {"date": {"value": "1833-12-15", "precision": "day"}},
+      "occupations": [{"title": "Pêcheur"}],
+      "residences": [],
+      "biography": {"summary": "Père attribué d’Émérence Blais. Les compilations le décrivent comme pêcheur, métier central dans la Gaspésie de son époque."},
+      "photos": [],
+      "tags": ["Branche Blais", "Pêcheur", "Gaspésie"],
+      "private": false,
+      "notes": "Profession et filiation à corroborer par les actes.",
+      "sourceIds": ["nosorigines-joseph-blais"]
+    },
+    {
+      "id": "louise-saint-fill",
+      "names": {"given": ["Louise"], "surnameAtBirth": "Saint-Fill", "display": "Louise Saint-Fill", "alternate": ["Louise St-Fill"]},
+      "sex": "female",
+      "living": false,
+      "death": null,
+      "residences": [],
+      "biography": {"summary": "Mère attribuée d’Émérence Blais et épouse de Joseph Blais."},
+      "photos": [],
+      "tags": ["Branche Saint-Fill", "À vérifier"],
+      "private": false,
+      "notes": "Dates et forme exacte du patronyme à confirmer.",
+      "sourceIds": ["nosorigines-joseph-blais"]
+    },
+    {
+      "id": "isaac-roussy-1805",
+      "names": {"given": ["Isaac"], "surnameAtBirth": "Roussy", "display": "Isaac Roussy", "alternate": []},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1805-01-21", "precision": "day"}},
+      "death": {"date": {"value": "1881-07-09", "precision": "day"}},
+      "residences": [],
+      "biography": {"summary": "Père d’Angélique Roussy et époux de Suzanne Mauger."},
+      "photos": [],
+      "tags": ["Branche Roussy", "Gaspésie"],
+      "private": false,
+      "notes": "Dates provenant d’une compilation généalogique.",
+      "sourceIds": ["nosorigines-thomas-beaudin", "nosorigines-roussy-list"]
+    },
+    {
+      "id": "suzanne-mauger-1812",
+      "names": {"given": ["Suzanne"], "surnameAtBirth": "Mauger", "display": "Suzanne Mauger", "alternate": []},
+      "sex": "female",
+      "living": false,
+      "birth": {"date": {"value": "1812", "precision": "year"}},
+      "death": {"date": {"value": "1885-03-12", "precision": "day"}},
+      "residences": [],
+      "biography": {"summary": "Mère d’Angélique Roussy et épouse d’Isaac Roussy."},
+      "photos": [],
+      "tags": ["Branche Mauger", "Gaspésie"],
+      "private": false,
+      "notes": "Lieu de naissance et parents non encore établis.",
+      "sourceIds": ["nosorigines-thomas-beaudin", "nosorigines-roussy-list"]
+    },
+    {
+      "id": "laurent-vaillancourt-1816",
+      "names": {"given": ["Laurent"], "surnameAtBirth": "Vaillancourt", "display": "Laurent Vaillancourt", "alternate": []},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1816", "precision": "year"}},
+      "death": {"date": {"value": "1886", "precision": "year"}},
+      "residences": [],
+      "biography": {"summary": "Père de Laurent Vaillancourt, né en 1849; fils d’Antoine Vaillancourt et Agathe Paradis."},
+      "photos": [],
+      "tags": ["Branche Vaillancourt", "Île d’Orléans"],
+      "private": false,
+      "notes": "Les dates exactes restent à relever dans les actes.",
+      "sourceIds": ["genealogiequebec-vaillancourt-chain"]
+    },
+    {
+      "id": "marie-josette-dion-1817",
+      "names": {"given": ["Marie-Josette"], "surnameAtBirth": "Dion", "display": "Marie-Josette Dion", "alternate": ["Marie Dion"]},
+      "sex": "female",
+      "living": false,
+      "birth": {"date": {"value": "1817", "precision": "year"}},
+      "death": null,
+      "residences": [],
+      "biography": {"summary": "Mère de Laurent Vaillancourt, né en 1849, et épouse de Laurent Vaillancourt."},
+      "photos": [],
+      "tags": ["Branche Dion", "Île d’Orléans"],
+      "private": false,
+      "notes": "Date de décès non établie.",
+      "sourceIds": ["genealogiequebec-vaillancourt-chain"]
+    },
+    {
+      "id": "antoine-vaillancourt-1781",
+      "names": {"given": ["Antoine"], "surnameAtBirth": "Vaillancourt", "display": "Antoine Vaillancourt", "alternate": []},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1781", "precision": "year"}},
+      "death": {"date": {"value": "1870", "precision": "year"}},
+      "residences": [],
+      "biography": {"summary": "Père de Laurent Vaillancourt (1816–1886); fils de Joseph-Marie Vaillancourt et Marie-Thérèse Pichet."},
+      "photos": [],
+      "tags": ["Branche Vaillancourt", "Île d’Orléans"],
+      "private": false,
+      "notes": "Certaines compilations donnent 1781, d’autres 1783; l’acte de baptême doit trancher.",
+      "sourceIds": ["genealogiequebec-vaillancourt-chain"]
+    },
+    {
+      "id": "agathe-paradis-1786",
+      "names": {"given": ["Agathe"], "surnameAtBirth": "Paradis", "display": "Agathe Paradis", "alternate": []},
+      "sex": "female",
+      "living": false,
+      "birth": {"date": {"value": "1786", "precision": "year"}},
+      "death": {"date": {"value": "1873", "precision": "year"}},
+      "residences": [],
+      "biography": {"summary": "Mère de Laurent Vaillancourt (1816–1886) et épouse d’Antoine Vaillancourt."},
+      "photos": [],
+      "tags": ["Branche Paradis", "Île d’Orléans"],
+      "private": false,
+      "notes": "Une autre compilation donne 1787; dates exactes à confirmer.",
+      "sourceIds": ["genealogiequebec-vaillancourt-chain"]
+    },
+    {
+      "id": "joseph-marie-vaillancourt-1740",
+      "names": {"given": ["Joseph-Marie"], "surnameAtBirth": "Vaillancourt", "display": "Joseph-Marie Vaillancourt", "alternate": []},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1740", "precision": "year"}},
+      "death": {"date": {"value": "1824", "precision": "year"}},
+      "residences": [],
+      "biography": {"summary": "Père d’Antoine Vaillancourt; fils de Paul Vaillancourt et Marie Raté."},
+      "photos": [],
+      "tags": ["Branche Vaillancourt", "Île d’Orléans"],
+      "private": false,
+      "notes": "À corroborer dans les actes originaux.",
+      "sourceIds": ["genealogiequebec-vaillancourt-chain"]
+    },
+    {
+      "id": "marie-therese-pichet-1746",
+      "names": {"given": ["Marie-Thérèse"], "surnameAtBirth": "Pichet", "display": "Marie-Thérèse Pichet", "alternate": ["Thérèse Pichet"]},
+      "sex": "female",
+      "living": false,
+      "birth": {"date": {"value": "1746", "precision": "year"}},
+      "death": {"date": {"value": "1815", "precision": "year"}},
+      "residences": [],
+      "biography": {"summary": "Mère d’Antoine Vaillancourt et épouse de Joseph-Marie Vaillancourt."},
+      "photos": [],
+      "tags": ["Branche Pichet", "Île d’Orléans"],
+      "private": false,
+      "notes": "Parents non encore ajoutés.",
+      "sourceIds": ["genealogiequebec-vaillancourt-chain"]
+    },
+    {
+      "id": "paul-vaillancourt-1709",
+      "names": {"given": ["Paul"], "surnameAtBirth": "Vaillancourt", "display": "Paul Vaillancourt", "alternate": []},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1709", "precision": "year"}},
+      "death": {"date": {"value": "1751", "precision": "year"}},
+      "residences": [],
+      "biography": {"summary": "Père de Joseph-Marie Vaillancourt et époux de Marie Raté."},
+      "photos": [],
+      "tags": ["Branche Vaillancourt", "Nouvelle-France"],
+      "private": false,
+      "notes": "Mariage avec Marie Raté en 1730 selon les compilations.",
+      "sourceIds": ["genealogiequebec-vaillancourt-chain", "genealogiequebec-marie-rate"]
+    },
+    {
+      "id": "marie-rate-1704",
+      "names": {"given": ["Marie"], "surnameAtBirth": "Raté", "display": "Marie Raté", "alternate": ["Marie Ratté"]},
+      "sex": "female",
+      "living": false,
+      "birth": {"date": {"value": "1704-03-21", "precision": "day"}, "place": {"name": "Saint-Pierre, île d’Orléans, Nouvelle-France"}},
+      "death": {"date": {"value": "1769", "precision": "year"}, "place": {"name": "Sainte-Famille, île d’Orléans, Québec"}},
+      "residences": [],
+      "biography": {"summary": "Mère de Joseph-Marie Vaillancourt. Par sa grand-mère Anne Martin, sa lignée remonte à Abraham Martin dit l’Écossais et Marguerite Langlois."},
+      "photos": [],
+      "tags": ["Branche Raté", "Nouvelle-France", "Île d’Orléans"],
+      "private": false,
+      "notes": "Baptisée le lendemain de sa naissance selon la transcription.",
+      "sourceIds": ["genealogiequebec-marie-rate"]
+    },
+    {
+      "id": "jean-baptiste-rate-1667",
+      "names": {"given": ["Jean-Baptiste"], "surnameAtBirth": "Raté", "display": "Jean-Baptiste Raté", "alternate": ["Jean-Baptiste Ratté"]},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1667", "precision": "year"}},
+      "death": {"date": {"value": "1760", "precision": "year"}},
+      "residences": [],
+      "biography": {"summary": "Père de Marie Raté; fils de Jacques Raté et Anne Martin."},
+      "photos": [],
+      "tags": ["Branche Raté", "Nouvelle-France"],
+      "private": false,
+      "notes": "Dates à vérifier dans les actes.",
+      "sourceIds": ["genealogiequebec-marie-rate"]
+    },
+    {
+      "id": "marie-madeleine-blouard-1682",
+      "names": {"given": ["Marie-Madeleine"], "surnameAtBirth": "Blouard", "display": "Marie-Madeleine Blouard", "alternate": []},
+      "sex": "female",
+      "living": false,
+      "birth": {"date": {"value": "1682", "precision": "year"}},
+      "death": {"date": {"value": "1746", "precision": "year"}},
+      "residences": [],
+      "biography": {"summary": "Mère de Marie Raté et épouse de Jean-Baptiste Raté."},
+      "photos": [],
+      "tags": ["Branche Blouard", "Nouvelle-France"],
+      "private": false,
+      "notes": "Parents non encore ajoutés.",
+      "sourceIds": ["genealogiequebec-marie-rate"]
+    },
+    {
+      "id": "jacques-rate-1630",
+      "names": {"given": ["Jacques"], "surnameAtBirth": "Raté", "display": "Jacques Raté", "alternate": ["Jacques Ratté"]},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1630", "precision": "year"}},
+      "death": {"date": {"value": "1699", "precision": "year"}},
+      "residences": [],
+      "biography": {"summary": "Père de Jean-Baptiste Raté et époux d’Anne Martin."},
+      "photos": [],
+      "tags": ["Branche Raté", "Pionnier de la Nouvelle-France"],
+      "private": false,
+      "notes": "Lieu de naissance et parents à documenter.",
+      "sourceIds": ["genealogiequebec-marie-rate"]
+    },
+    {
+      "id": "anne-martin-1645",
+      "names": {"given": ["Anne"], "surnameAtBirth": "Martin", "display": "Anne Martin", "alternate": []},
+      "sex": "female",
+      "living": false,
+      "birth": {"date": {"value": "1645", "precision": "year"}, "place": {"name": "Québec, Nouvelle-France"}},
+      "death": {"date": {"value": "1717", "precision": "year"}},
+      "residences": [],
+      "biography": {"summary": "Fille d’Abraham Martin dit l’Écossais et Marguerite Langlois; épouse de Jacques Raté."},
+      "photos": [],
+      "tags": ["Branche Martin", "Nouvelle-France"],
+      "private": false,
+      "notes": "Le contrat et l’acte de mariage devraient être liés ultérieurement comme sources primaires.",
+      "sourceIds": ["genealogiequebec-marie-rate", "official-abraham-martin"]
+    },
+    {
+      "id": "abraham-martin-1589",
+      "names": {"given": ["Abraham"], "surnameAtBirth": "Martin", "display": "Abraham Martin dit l’Écossais", "alternate": ["Maître Abraham"]},
+      "sex": "male",
+      "living": false,
+      "birth": {"date": {"value": "1589", "precision": "decade", "qualifier": "about"}, "place": {"name": "France, probablement dans la région de Dieppe"}},
+      "death": {"date": {"value": "1664", "precision": "year"}, "place": {"name": "Québec, Nouvelle-France"}},
+      "occupations": [{"title": "Pilote ou pêcheur"}, {"title": "Agriculteur", "from": "1635"}],
+      "residences": [],
+      "biography": {"summary": "Un des premiers colons français de Québec. Ses terres et l’usage populaire de son prénom sont à l’origine du nom des plaines d’Abraham."},
+      "photos": [],
+      "tags": ["Pionnier de la Nouvelle-France", "Plaines d’Abraham"],
+      "private": false,
+      "notes": "Le surnom « l’Écossais » est authentique, mais aucune origine écossaise n’est démontrée par les recherches actuelles.",
+      "sourceIds": ["official-abraham-martin"]
+    },
+    {
+      "id": "marguerite-langlois",
+      "names": {"given": ["Marguerite"], "surnameAtBirth": "Langlois", "display": "Marguerite Langlois", "alternate": []},
+      "sex": "female",
+      "living": false,
+      "death": {"date": {"value": "1665", "precision": "year"}, "place": {"name": "Québec, Nouvelle-France"}},
+      "occupations": [{"title": "Sage-femme"}],
+      "residences": [],
+      "biography": {"summary": "Épouse d’Abraham Martin. Arrivée à Québec vers 1620, elle est décrite comme sage-femme auprès des familles de la jeune colonie."},
+      "photos": [],
+      "tags": ["Pionnière de la Nouvelle-France", "Sage-femme"],
+      "private": false,
+      "notes": "Année de naissance inconnue.",
+      "sourceIds": ["official-abraham-martin"]
+    }
+  ],
+  "relationships": [
+    {"id": "pat-p1", "type": "biological-parent", "personIds": ["philomene-fortier-1836", "pierre-blouin-1860"], "sourceIds": ["familysearch-pierre-blouin-1860"]},
+    {"id": "pat-m1", "type": "marriage", "personIds": ["pierre-blouin-1826", "philomene-fortier-1836"], "start": {"date": {"value": "1857-02-10", "precision": "day"}, "place": {"name": "Île d’Orléans, Québec"}}, "sourceIds": ["familysearch-pierre-blouin-1826"]},
+    {"id": "pat-p2", "type": "biological-parent", "personIds": ["jean-baptiste-blouin", "denise-blouin-1938"], "sourceIds": ["obit-denise-blouin"]},
+    {"id": "pat-p3", "type": "biological-parent", "personIds": ["irma-vaillancourt", "denise-blouin-1938"], "sourceIds": ["obit-denise-blouin"]},
+    {"id": "pat-p4", "type": "biological-parent", "personIds": ["paul-emile-laroque", "jean-paul-larocque-religieux-1914"], "sourceIds": ["obit-jean-paul-larocque"]},
+    {"id": "pat-p5", "type": "biological-parent", "personIds": ["marguerite-beaudin", "jean-paul-larocque-religieux-1914"], "sourceIds": ["obit-jean-paul-larocque"]},
+    {"id": "pat-p6", "type": "biological-parent", "personIds": ["joseph-larocque-1862", "paul-emile-laroque"], "sourceIds": ["nosorigines-larocque"]},
+    {"id": "pat-p7", "type": "biological-parent", "personIds": ["adelaide-josephine-turgeon", "paul-emile-laroque"], "sourceIds": ["nosorigines-larocque"]},
+    {"id": "pat-p8", "type": "biological-parent", "personIds": ["gedeon-larocque", "joseph-larocque-1862"], "sourceIds": ["nosorigines-larocque"]},
+    {"id": "pat-p9", "type": "biological-parent", "personIds": ["felicite-thibault", "joseph-larocque-1862"], "sourceIds": ["nosorigines-larocque"]},
+    {"id": "pat-p10", "type": "biological-parent", "personIds": ["thomas-beaudin-1832", "josephat-beaudin"], "sourceIds": ["nosorigines-thomas-beaudin"]},
+    {"id": "pat-p11", "type": "biological-parent", "personIds": ["angelique-roussy-1835", "josephat-beaudin"], "sourceIds": ["nosorigines-thomas-beaudin"]},
+    {"id": "pat-m2", "type": "marriage", "personIds": ["thomas-beaudin-1832", "angelique-roussy-1835"], "start": {"date": {"value": "1854-02-14", "precision": "day"}, "place": {"name": "Grande-Rivière, Gaspésie, Québec"}}, "sourceIds": ["nosorigines-thomas-beaudin"]},
+    {"id": "pat-p12", "type": "biological-parent", "personIds": ["joseph-beaudin-1800", "thomas-beaudin-1832"]},
+    {"id": "pat-p13", "type": "biological-parent", "personIds": ["emerence-blais-1805", "thomas-beaudin-1832"]},
+    {"id": "pat-p14", "type": "biological-parent", "personIds": ["abraham-beaudin-1771", "joseph-beaudin-1800"], "notes": "Filiation compilée à confirmer par les actes."},
+    {"id": "pat-p15", "type": "biological-parent", "personIds": ["marie-anne-methot", "joseph-beaudin-1800"], "notes": "Filiation compilée à confirmer par les actes."},
+    {"id": "pat-p16", "type": "biological-parent", "personIds": ["joseph-blais-1770", "emerence-blais-1805"], "notes": "Filiation compilée à confirmer par les actes."},
+    {"id": "pat-p17", "type": "biological-parent", "personIds": ["louise-saint-fill", "emerence-blais-1805"], "notes": "Filiation compilée à confirmer par les actes."},
+    {"id": "pat-p18", "type": "biological-parent", "personIds": ["isaac-roussy-1805", "angelique-roussy-1835"]},
+    {"id": "pat-p19", "type": "biological-parent", "personIds": ["suzanne-mauger-1812", "angelique-roussy-1835"]},
+    {"id": "pat-p20", "type": "biological-parent", "personIds": ["laurent-vaillancourt-1816", "laurent-vaillancourt"], "sourceIds": ["genealogiequebec-vaillancourt-chain"]},
+    {"id": "pat-p21", "type": "biological-parent", "personIds": ["marie-josette-dion-1817", "laurent-vaillancourt"], "sourceIds": ["genealogiequebec-vaillancourt-chain"]},
+    {"id": "pat-p22", "type": "biological-parent", "personIds": ["antoine-vaillancourt-1781", "laurent-vaillancourt-1816"]},
+    {"id": "pat-p23", "type": "biological-parent", "personIds": ["agathe-paradis-1786", "laurent-vaillancourt-1816"]},
+    {"id": "pat-p24", "type": "biological-parent", "personIds": ["joseph-marie-vaillancourt-1740", "antoine-vaillancourt-1781"]},
+    {"id": "pat-p25", "type": "biological-parent", "personIds": ["marie-therese-pichet-1746", "antoine-vaillancourt-1781"]},
+    {"id": "pat-p26", "type": "biological-parent", "personIds": ["paul-vaillancourt-1709", "joseph-marie-vaillancourt-1740"]},
+    {"id": "pat-p27", "type": "biological-parent", "personIds": ["marie-rate-1704", "joseph-marie-vaillancourt-1740"]},
+    {"id": "pat-m3", "type": "marriage", "personIds": ["paul-vaillancourt-1709", "marie-rate-1704"], "start": {"date": {"value": "1730-11-20", "precision": "day"}, "place": {"name": "Île d’Orléans, Nouvelle-France"}}, "sourceIds": ["genealogiequebec-marie-rate"]},
+    {"id": "pat-p28", "type": "biological-parent", "personIds": ["jean-baptiste-rate-1667", "marie-rate-1704"]},
+    {"id": "pat-p29", "type": "biological-parent", "personIds": ["marie-madeleine-blouard-1682", "marie-rate-1704"]},
+    {"id": "pat-p30", "type": "biological-parent", "personIds": ["jacques-rate-1630", "jean-baptiste-rate-1667"]},
+    {"id": "pat-p31", "type": "biological-parent", "personIds": ["anne-martin-1645", "jean-baptiste-rate-1667"]},
+    {"id": "pat-p32", "type": "biological-parent", "personIds": ["abraham-martin-1589", "anne-martin-1645"], "sourceIds": ["official-abraham-martin"]},
+    {"id": "pat-p33", "type": "biological-parent", "personIds": ["marguerite-langlois", "anne-martin-1645"], "sourceIds": ["official-abraham-martin"]}
+  ],
+  "sources": [
+    {"id": "familysearch-pierre-blouin-1860", "type": "arbre familial documenté", "title": "Pierre Blouin (1860–1923)", "repository": "FamilySearch", "url": "https://ancestors.familysearch.org/en/K8RM-BYT/pierre-blouin-1860-1923", "accessed": "2026-08-01", "evidenceType": "compiled", "confidence": "probable", "notes": "Donne sa naissance un 29 février, son mariage en 1887, ses parents et quinze enfants. Chaque événement doit idéalement être contrôlé dans les images des registres."},
+    {"id": "familysearch-pierre-blouin-1826", "type": "arbre familial documenté", "title": "Pierre Blouin (1826–1914)", "repository": "FamilySearch", "url": "https://ancestors.familysearch.org/en/KHBL-CQF/pierre-blouin-1826-1914", "accessed": "2026-08-01", "evidenceType": "compiled", "confidence": "probable"},
+    {"id": "obit-denise-blouin", "type": "avis de décès", "title": "Avis de décès de Denise Blouin Plante", "repository": "Fédération québécoise des sociétés de généalogie", "url": "https://www.federationgenealogie.qc.ca/avis/7840559", "accessed": "2026-08-01", "evidenceType": "secondary", "confidence": "confirmed", "notes": "Confirme ses parents et nomme les treize enfants connus de Jean-Baptiste Blouin et Irma Vaillancourt."},
+    {"id": "obit-jean-paul-larocque", "type": "nécrologie transcrite", "title": "Frère Jean-Paul La Rocque (1914–2008)", "repository": "MesAieux", "url": "https://www.mesaieux.com/genealogy/paul-maurice_larocque", "accessed": "2026-08-01", "evidenceType": "secondary", "confidence": "probable", "notes": "Confirme ses parents et ses soixante-dix-sept années de vie religieuse; l’avis original devrait remplacer la transcription."},
+    {"id": "nosorigines-larocque", "type": "compilation généalogique", "title": "Famille Larocque — Paul-Émile et Joseph", "repository": "NosOrigines", "url": "https://www.nosorigines.qc.ca/mobile-genealogie-list-persons.aspx?Famille=Roquebrune_697&ancetre=73", "accessed": "2026-08-01", "evidenceType": "compiled", "confidence": "probable", "notes": "Relie Paul-Émile à Joseph Larocque et Adélaïde-Joséphine Turgeon; les actes originaux doivent confirmer la génération suivante."},
+    {"id": "shlsj-gustave-larocque", "type": "index de baptême", "title": "Baptême de Gustave Larocque en 1930", "repository": "Société d’histoire du Lac-Saint-Jean — Genaise", "url": "https://www.shlsj.org/genaise/fiches-completes?page=180&spouseLastName=de", "accessed": "2026-08-01", "evidenceType": "secondary", "confidence": "confirmed", "notes": "Donne Paul-Émile Larocque comme entrepreneur au baptême de son fils Gustave."},
+    {"id": "nosorigines-thomas-beaudin", "type": "transcription de registres", "title": "Thomas Beaudin et Angélique Roussy", "repository": "NosOrigines", "url": "https://www.nosorigines.qc.ca/GenealogieQuebec.aspx?genealogie=Beaudin_Thomas&pid=1152301", "accessed": "2026-08-01", "evidenceType": "compiled", "confidence": "probable", "notes": "Donne les dates, le mariage, les parents des deux époux et leurs enfants mariés, dont Josephat."},
+    {"id": "nosorigines-roussy-list", "type": "compilation généalogique", "title": "Famille Roussy", "repository": "NosOrigines", "url": "https://www.nosorigines.qc.ca/mobile-genealogie-list-persons.aspx?Famille=Roussy_8719&ancetre=1", "accessed": "2026-08-01", "evidenceType": "compiled", "confidence": "probable"},
+    {"id": "nosorigines-marie-anne-methot", "type": "compilation généalogique", "title": "Marie-Anne Méthot et Abraham Beaudin", "repository": "NosOrigines", "url": "https://www.nosorigines.qc.ca/mobile-genealogie-quebec.aspx?genealogie=Methot_Marie-Anne&pid=230395", "accessed": "2026-08-01", "evidenceType": "compiled", "confidence": "hypothesis", "notes": "À utiliser comme piste jusqu’à vérification génération par génération."},
+    {"id": "nosorigines-joseph-blais", "type": "compilation généalogique", "title": "Joseph Blais et Louise Saint-Fill", "repository": "NosOrigines", "url": "https://www.nosorigines.qc.ca/GenealogieQuebec.aspx?partID=271276&pid=270589", "accessed": "2026-08-01", "evidenceType": "compiled", "confidence": "hypothesis"},
+    {"id": "genealogiequebec-vaillancourt-chain", "type": "transcription généalogique", "title": "Lignée Vaillancourt de l’île d’Orléans", "repository": "Généalogie Québec — Stemma4Web", "url": "https://genealogie.quebec/stemma4web/info/414851", "accessed": "2026-08-01", "evidenceType": "compiled", "confidence": "probable", "notes": "Présente la chaîne Laurent Vaillancourt–Antoine–Joseph-Marie–Paul et les liens vers les registres cités."},
+    {"id": "genealogiequebec-marie-rate", "type": "transcription généalogique", "title": "Marie Raté (1704–1769) et ses ascendants", "repository": "Généalogie Québec — Stemma4Web", "url": "https://genealogie.quebec/stemma4web/info/4420", "accessed": "2026-08-01", "evidenceType": "compiled", "confidence": "probable"},
+    {"id": "official-abraham-martin", "type": "biographie historique officielle", "title": "Abraham Martin dit l’Écossais", "repository": "Commission des champs de bataille nationaux — Plaines d’Abraham", "url": "https://www.plainesdabraham.ca/histoire-et-patrimoine/histoire-du-parc/avant-1759-p%C3%A9riode-pr%C3%A9coloniale-et-nouvelle-france/abraham-martin-dit-l%C3%A9cossais", "accessed": "2026-08-01", "evidenceType": "official-secondary", "confidence": "confirmed", "notes": "Source officielle pour sa biographie, ses terres et l’origine du toponyme. Elle précise que son origine écossaise n’est pas démontrée."}
+  ],
+  "research": [
+    {
+      "personId": "jean-paul-blouin",
+      "stories": [
+        {"title": "L’aîné d’une fratrie de treize enfants", "text": "L’avis de décès de sa sœur Denise permet de nommer treize enfants de Jean-Baptiste Blouin et Irma Vaillancourt : Jean-Paul, Georgette, Roland, Robert, Lucile, Marcel, André, Maurice, Lucien, Éliane, Monique, Céline et Denise.", "sourceIds": ["obit-denise-blouin"], "confidence": "confirmed"}
+      ],
+      "researchQuestions": ["Retrouver son baptême de 1923 et le recensement de 1931 pour documenter le foyer Blouin–Vaillancourt."]
+    },
+    {
+      "personId": "jean-baptiste-blouin",
+      "stories": [
+        {"title": "Treize enfants avec Irma Vaillancourt", "text": "La publication familiale sur Irma et l’avis de décès de leur fille Denise concordent : Jean-Baptiste et Irma ont élevé une famille de treize enfants.", "sourceIds": ["association-vaillancourt", "obit-denise-blouin"], "confidence": "confirmed"}
+      ],
+      "researchQuestions": ["Retrouver son baptême de 1898 et ses occupations dans les recensements de 1921 et 1931."]
+    },
+    {
+      "personId": "pierre-blouin-1860",
+      "stories": [
+        {"title": "Né un 29 février", "text": "Pierre Blouin est donné comme né le 29 février 1860 à Saint-Jean-Baptiste, île d’Orléans. Il a épousé Eugénie Delisle en 1887 et les compilations leur attribuent quinze enfants.", "sourceIds": ["familysearch-pierre-blouin-1860"], "confidence": "probable"}
+      ],
+      "researchQuestions": ["Consulter le baptême du 29 février 1860 et l’acte de mariage du 16 février 1887."]
+    },
+    {
+      "personId": "pierre-blouin-1826",
+      "stories": [
+        {"title": "Une autre grande famille de l’île d’Orléans", "text": "Pierre Blouin, né en 1826, a épousé Philomène Fortier en 1857. La compilation FamilySearch leur attribue au moins huit enfants, dont Pierre, né en 1860.", "sourceIds": ["familysearch-pierre-blouin-1826", "familysearch-pierre-blouin-1860"], "confidence": "probable"}
+      ],
+      "researchQuestions": ["Identifier les parents de Philomène Fortier dans l’acte de mariage de 1857."]
+    },
+    {
+      "personId": "eugenie-delisle",
+      "stories": [
+        {"title": "Quinze enfants dans la génération précédente", "text": "Eugénie Delisle a épousé Pierre Blouin à l’île d’Orléans en 1887. Leur fiche familiale recense dix fils et cinq filles, dont Jean-Baptiste Blouin.", "sourceIds": ["familysearch-pierre-blouin-1860"], "confidence": "probable"}
+      ],
+      "researchQuestions": ["Retrouver l’acte de mariage de 1887 afin d’identifier ses parents et de poursuivre la branche Delisle."]
+    },
+    {
+      "personId": "irma-vaillancourt",
+      "stories": [
+        {"title": "Une lignée jusqu’aux débuts de Québec", "text": "Par son père Jean Napoléon Vaillancourt, la lignée d’Irma remonte aux Vaillancourt de l’île d’Orléans, puis à Marie Raté et à sa grand-mère Anne Martin, fille d’Abraham Martin et Marguerite Langlois.", "sourceIds": ["genealogiequebec-vaillancourt", "genealogiequebec-vaillancourt-chain", "genealogiequebec-marie-rate", "official-abraham-martin"], "confidence": "probable"}
+      ],
+      "researchQuestions": ["Vérifier chaque génération de la chaîne Vaillancourt–Raté–Martin dans les actes originaux."]
+    },
+    {
+      "personId": "marie-amanda-lapointe",
+      "stories": [
+        {"title": "La branche encore fermée de l’arbre", "text": "Son mariage avec Jean Napoléon Vaillancourt est indexé à Saint-Laurent, île d’Orléans, en 1901. La consultation de l’acte original est encore nécessaire pour identifier sans ambiguïté ses parents.", "sourceIds": ["mesaieux-amanda"], "confidence": "confirmed"}
+      ],
+      "researchQuestions": ["Obtenir l’acte original du mariage de 1901; ne pas rattacher une autre Marie-Amanda Lapointe sur la seule base du nom."]
+    },
+    {
+      "personId": "paul-emile-laroque",
+      "stories": [
+        {"title": "Entrepreneur à Québec", "text": "Au baptême de son fils Gustave, en 1930 à l’Hôpital Saint-Sacrement, Paul-Émile La Rocque est décrit comme entrepreneur.", "sourceIds": ["shlsj-gustave-larocque"], "confidence": "confirmed"}
+      ],
+      "researchQuestions": ["Identifier le secteur de son entreprise dans les annuaires de Québec et les recensements.", "Retrouver son acte de mariage de 1913 avec Marguerite Beaudin."]
+    },
+    {
+      "personId": "noella-laroque",
+      "stories": [
+        {"title": "Un frère religieux pendant soixante-dix-sept ans", "text": "Son frère Jean-Paul La Rocque, né en 1914, a appartenu aux Frères de l’Instruction chrétienne pendant soixante-dix-sept années avant son décès à La Prairie en 2008.", "sourceIds": ["obit-jean-paul-larocque"], "confidence": "probable"}
+      ],
+      "researchQuestions": ["Retrouver le recensement de 1931 du foyer La Rocque–Beaudin pour documenter tous les enfants présents."]
+    },
+    {
+      "personId": "josephat-beaudin",
+      "stories": [
+        {"title": "Une famille enracinée à Grande-Rivière", "text": "Josephat était fils de Thomas Beaudin et Angélique Roussy, mariés à Grande-Rivière en 1854. Les baptêmes, mariages et sépultures de plusieurs générations de la famille se trouvent dans les registres gaspésiens.", "sourceIds": ["nosorigines-thomas-beaudin"], "confidence": "probable"}
+      ],
+      "researchQuestions": ["Retrouver l’acte de mariage de Josephat et Mary-Jane Trachy afin de confirmer directement les quatre parents."]
+    },
+    {
+      "personId": "thomas-beaudin-1832",
+      "stories": [
+        {"title": "Huit mois avant le baptême", "text": "La transcription donne sa naissance au 4 novembre 1832, mais son baptême seulement le 27 août 1833. Cet intervalle inhabituel mérite la consultation de l’image originale pour vérifier s’il s’agit d’un baptême tardif ou d’une erreur de transcription.", "sourceIds": ["nosorigines-thomas-beaudin"], "confidence": "probable"}
+      ],
+      "researchQuestions": ["Consulter l’image du baptême de 1833 et l’acte de mariage de 1854."]
+    },
+    {
+      "personId": "marie-rate-1704",
+      "stories": [
+        {"title": "Le pont vers Abraham Martin", "text": "Marie Raté relie la branche Vaillancourt aux premiers habitants de Québec : son père Jean-Baptiste Raté était fils d’Anne Martin, elle-même fille d’Abraham Martin dit l’Écossais et de Marguerite Langlois.", "sourceIds": ["genealogiequebec-marie-rate", "official-abraham-martin"], "confidence": "probable"}
+      ],
+      "researchQuestions": ["Ajouter les images de son baptême de 1704 et de son mariage de 1730."]
+    },
+    {
+      "personId": "abraham-martin-1589",
+      "stories": [
+        {"title": "L’homme derrière les plaines d’Abraham", "text": "Arrivé à Québec vers 1620 avec Marguerite Langlois, Abraham Martin a travaillé sur les navires comme pilote ou pêcheur avant de devenir agriculteur sur les hauteurs de Québec. Le secteur a progressivement pris le nom de plaines d’Abraham.", "sourceIds": ["official-abraham-martin"], "confidence": "confirmed"},
+        {"title": "« L’Écossais » sans preuve d’une naissance écossaise", "text": "Le surnom est attesté, mais les recherches historiques ne permettent pas d’établir une origine écossaise solide. Il pourrait être lié à la navigation, à un nom de guerre ou même à la rue d’Écosse de Dieppe.", "sourceIds": ["official-abraham-martin"], "confidence": "confirmed"}
+      ],
+      "researchQuestions": ["Retrouver et relier les actes de Dieppe concernant les premiers enfants du couple."]
+    },
+    {
+      "personId": "denise-blouin-1938",
+      "stories": [
+        {"title": "Une notice qui reconstitue toute une fratrie", "text": "Son avis de décès est particulièrement précieux parce qu’il nomme ses douze frères et sœurs, donnant une confirmation indépendante de la tradition des treize enfants de Jean-Baptiste et Irma.", "sourceIds": ["obit-denise-blouin"], "confidence": "confirmed"}
+      ],
+      "researchQuestions": ["Comparer cette liste avec les baptêmes et les recensements du foyer."]
+    },
+    {
+      "personId": "philomene-fortier-1836",
+      "stories": [
+        {"title": "Un homonyme à éviter", "text": "Une Philomène Fortier née en 1841 et morte en 1845 apparaît dans d’autres arbres. Elle ne peut pas être l’épouse de Pierre Blouin en 1857. Les parents de la Philomène née vers 1836 doivent donc être établis uniquement par l’acte de mariage.", "sourceIds": ["familysearch-pierre-blouin-1826"], "confidence": "confirmed"}
+      ],
+      "researchQuestions": ["Obtenir l’acte de mariage du 10 février 1857 pour identifier ses parents."]
+    }
+  ]
+}
