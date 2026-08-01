@@ -5,6 +5,7 @@ import relationshipData from './data/relationships.json'
 import sourceData from './data/sources.json'
 import researchData from './data/research.json'
 import maternalExtensionData from './data/maternal-extension.json'
+import jeanMariePoulinExtensionData from './data/jean-marie-poulin-extension.json'
 import type { Person, Relationship, ResearchProfile, Source } from './types/genealogy'
 import { FamilyTree } from './components/FamilyTree'
 import './styles.css'
@@ -16,10 +17,14 @@ interface GenealogyExtension {
   research?: ResearchProfile[]
 }
 
-const maternalExtension = maternalExtensionData as GenealogyExtension
+const extensions = [
+  maternalExtensionData as GenealogyExtension,
+  jeanMariePoulinExtensionData as GenealogyExtension,
+]
+
 const allResearch = [
   ...(researchData as ResearchProfile[]),
-  ...(maternalExtension.research ?? []),
+  ...extensions.flatMap(extension => extension.research ?? []),
 ]
 const researchByPerson = new Map<string, ResearchProfile>()
 
@@ -37,7 +42,7 @@ for (const profile of allResearch) {
 
 const allDeceasedPeople = [
   ...(peopleData as Person[]),
-  ...(maternalExtension.people ?? []),
+  ...extensions.flatMap(extension => extension.people ?? []),
 ]
 
 const deceasedPeople = allDeceasedPeople.map(person => {
@@ -63,11 +68,11 @@ const deceasedPeople = allDeceasedPeople.map(person => {
 const people = [...(livingNamesData as Person[]), ...deceasedPeople]
 const relationships = [
   ...(relationshipData as Relationship[]),
-  ...(maternalExtension.relationships ?? []),
+  ...extensions.flatMap(extension => extension.relationships ?? []),
 ]
 const sources = [
   ...(sourceData as Source[]),
-  ...(maternalExtension.sources ?? []),
+  ...extensions.flatMap(extension => extension.sources ?? []),
 ]
 
 export default function App() {
