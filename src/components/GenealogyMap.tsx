@@ -17,7 +17,7 @@ interface MapEvent {
 interface LeafletMap {
   remove: () => void
   setView: (center: [number, number], zoom: number) => LeafletMap
-  fitBounds: (bounds: Array<[number, number]>, options?: Record<string, unknown>) => void
+  invalidateSize: (options?: Record<string, unknown>) => LeafletMap
 }
 
 interface LeafletMarker {
@@ -85,8 +85,6 @@ function buildMapEvents(people: Person[], relationships: Relationship[]) {
       })
     })
 
-  // A very small deterministic offset keeps people sharing the same event
-  // clickable without implying a different municipality.
   const locationCounts = new Map<string, number>()
   return events.map(event => {
     const key = `${event.latitude.toFixed(4)}:${event.longitude.toFixed(4)}:${event.type}`
@@ -102,23 +100,30 @@ function buildMapEvents(people: Person[], relationships: Relationship[]) {
   })
 }
 
-function loadLeaflet() {
-  if (window.L) return Promise.resolve(window.L)
+function waitForLeafletCss() {
+  const link = document.getElementById('leaflet-css') as HTMLLinkElement | null
+  if (!link) return Promise.resolve()
+  if (link.sheet) return Promise.resolve()
 
-  const cssId = 'leaflet-css'
-  if (!document.getElementById(cssId)) {
-    const link = document.createElement('link')
-    link.id = cssId
-    link.rel = 'stylesheet'
-    link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
-    link.integrity = 'sha256-p4NxAoJBhIINfQ3ynhHDYf0YQYl6aMZqY8/2xHhZXXM='
-    link.crossOrigin = ''
-    document.head.appendChild(link)
-  }
+  return new Promise<void>(resolve => {
+    const finish = () => resolve()
+    link.addEventListener('load', finish, { once: true })
+    link.addEventListener('error', finish, { once: true })
+    window.setTimeout(finish, 2500)
+  })
+}
+
+async function loadLeaflet() {
+  await waitForLeafletCss()
+  if (window.L) return window.L
 
   return new Promise<LeafletApi>((resolve, reject) => {
     const existing = document.getElementById('leaflet-js') as HTMLScriptElement | null
     if (existing) {
+      if (window.L) {
+        resolve(window.L)
+        return
+      }
       existing.addEventListener('load', () => window.L ? resolve(window.L) : reject(new Error('Leaflet indisponible')))
       existing.addEventListener('error', () => reject(new Error('Impossible de charger Leaflet')))
       return
@@ -128,7 +133,7 @@ function loadLeaflet() {
     script.id = 'leaflet-js'
     script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'
     script.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo='
-    script.crossOrigin = ''
+    script.crossOrigin = 'anonymous'
     script.onload = () => window.L ? resolve(window.L) : reject(new Error('Leaflet indisponible'))
     script.onerror = () => reject(new Error('Impossible de charger Leaflet'))
     document.head.appendChild(script)
@@ -160,6 +165,8 @@ export function GenealogyMap({ people, relationships, onOpenPerson }: Props) {
 
   useEffect(() => {
     let cancelled = false
+    let resizeObserver: ResizeObserver | null = null
+    let resizeTimer = 0
 
     loadLeaflet()
       .then(L => {
@@ -173,6 +180,9 @@ export function GenealogyMap({ people, relationships, onOpenPerson }: Props) {
           minZoom: 2,
           maxZoom: 18,
           scrollWheelZoom: true,
+          touchZoom: true,
+          bounceAtZoomLimits: false,
+          tap: true,
         })
         mapInstance.current = map
 
@@ -189,7 +199,11 @@ export function GenealogyMap({ people, relationships, onOpenPerson }: Props) {
             iconSize: [22, 22],
             iconAnchor: [11, 11],
           })
-          const marker = L.marker([event.latitude, event.longitude], { icon, keyboard: true, title: event.person.names.display })
+          const marker = L.marker([event.latitude, event.longitude], {
+            icon,
+            keyboard: true,
+            title: event.person.names.display,
+          })
           marker
             .addTo(map)
             .bindTooltip(`${event.person.names.display} · ${eventLabels[event.type]}`, {
@@ -204,6 +218,23 @@ export function GenealogyMap({ people, relationships, onOpenPerson }: Props) {
               },
             })
         })
+
+        const refreshSize = () => {
+          window.clearTimeout(resizeTimer)
+          resizeTimer = window.setTimeout(() => map.invalidateSize({ pan: false }), 60)
+        }
+
+        requestAnimationFrame(() => {
+          map.invalidateSize({ pan: false })
+          window.setTimeout(() => map.invalidateSize({ pan: false }), 250)
+        })
+
+        if ('ResizeObserver' in window) {
+          resizeObserver = new ResizeObserver(refreshSize)
+          resizeObserver.observe(mapElement.current)
+        }
+        window.addEventListener('orientationchange', refreshSize)
+        window.addEventListener('resize', refreshSize)
       })
       .catch(error => {
         if (!cancelled) setLoadError(error instanceof Error ? error.message : 'La carte ne peut pas être chargée.')
@@ -211,6 +242,8 @@ export function GenealogyMap({ people, relationships, onOpenPerson }: Props) {
 
     return () => {
       cancelled = true
+      resizeObserver?.disconnect()
+      window.clearTimeout(resizeTimer)
       mapInstance.current?.remove()
       mapInstance.current = null
     }
