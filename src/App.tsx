@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import peopleData from './data/people.json'
+import livingNamesData from './data/living-names.json'
 import relationshipData from './data/relationships.json'
 import sourceData from './data/sources.json'
 import researchData from './data/research.json'
@@ -8,7 +9,7 @@ import { FamilyTree } from './components/FamilyTree'
 import './styles.css'
 
 const researchByPerson = new Map((researchData as ResearchProfile[]).map(profile => [profile.personId, profile]))
-const people = (peopleData as Person[]).map(person => {
+const deceasedPeople = (peopleData as Person[]).map(person => {
   const research = researchByPerson.get(person.id)
   if (!research) return person
   return {
@@ -20,11 +21,12 @@ const people = (peopleData as Person[]).map(person => {
     },
   }
 })
+const people = [...(livingNamesData as Person[]), ...deceasedPeople]
 const relationships = relationshipData as Relationship[]
 const sources = sourceData as Source[]
 
 export default function App() {
-  const [rootId, setRootId] = useState('jean-paul-blouin')
+  const [rootId, setRootId] = useState('charles-blouin')
   const [query, setQuery] = useState('')
 
   const matches = useMemo(() => query.trim() ? people.filter(p => p.names.display.toLowerCase().includes(query.toLowerCase())) : [], [query])
@@ -32,7 +34,7 @@ export default function App() {
   return (
     <main>
       <header>
-        <div><h1>Arbre généalogique</h1><p>Explorez les ancêtres décédés, leurs histoires et les preuves disponibles.</p></div>
+        <div><h1>Arbre généalogique</h1><p>Explorez les ancêtres, leurs histoires et les preuves disponibles.</p></div>
         <div className="search-wrap">
           <input value={query} onChange={e => setQuery(e.target.value)} placeholder="Rechercher une personne…" />
           {matches.length > 0 && <div className="search-results">{matches.map(p => <button key={p.id} onClick={() => { setRootId(p.id); setQuery('') }}>{p.names.display}</button>)}</div>}
