@@ -1,5 +1,7 @@
 export type DatePrecision = 'exact' | 'day' | 'month' | 'year' | 'decade' | 'unknown'
 export type DateQualifier = 'exact' | 'about' | 'before' | 'after' | 'between' | 'estimated'
+export type ConfidenceLevel = 'confirmed' | 'probable' | 'hypothesis'
+export type EvidenceType = 'primary' | 'official-secondary' | 'secondary' | 'compiled' | 'family-tradition' | 'research-guide'
 
 export interface GenealogyDate {
   value?: string
@@ -35,6 +37,7 @@ export interface Story {
   title: string
   text: string
   sourceIds?: string[]
+  confidence?: ConfidenceLevel
 }
 
 export interface Person {
@@ -54,6 +57,7 @@ export interface Person {
   biography?: {
     summary?: string
     stories?: Story[]
+    researchQuestions?: string[]
   }
   photos?: Array<{ path: string; caption?: string; year?: number }>
   sourceIds?: string[]
@@ -90,4 +94,6 @@ export interface Source {
   url?: string
   accessed?: string
   notes?: string
+  evidenceType?: EvidenceType
+  confidence?: ConfidenceLevel
 }
