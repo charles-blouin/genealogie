@@ -3,15 +3,20 @@
 body { margin: 0; min-width: 320px; }
 button, input { font: inherit; }
 main { min-height: 100vh; }
-header { display: flex; justify-content: space-between; gap: 2rem; align-items: center; padding: 1.25rem 2rem; background: white; border-bottom: 1px solid #ddd6c8; position: relative; z-index: 3; }
+header { display: flex; justify-content: space-between; gap: 2rem; align-items: center; padding: 1.25rem 2rem; background: white; border-bottom: 1px solid #ddd6c8; position: relative; z-index: 30; }
 h1 { margin: 0; }
 header p { margin: .3rem 0 0; color: #6b7280; }
 .search-wrap { position: relative; min-width: 260px; }
 .search-wrap input { width: 100%; padding: .7rem .9rem; border: 1px solid #c9c1b4; border-radius: 8px; }
-.search-results { position: absolute; top: 100%; left: 0; right: 0; background: white; border: 1px solid #ddd6c8; box-shadow: 0 8px 20px #0002; }
+.search-results { position: absolute; top: 100%; left: 0; right: 0; background: white; border: 1px solid #ddd6c8; box-shadow: 0 8px 20px #0002; z-index: 40; }
 .search-results button { display: block; width: 100%; padding: .7rem; border: 0; background: white; text-align: left; cursor: pointer; }
 .search-results button:hover { background: #f5f5f5; }
-.tree-area { min-height: calc(100vh - 92px); }
+.view-tabs { display: flex; justify-content: center; gap: .35rem; padding: .75rem 1rem 0; background: #f6f3ed; }
+.view-tabs button { display: inline-flex; align-items: center; gap: .45rem; min-width: 112px; justify-content: center; border: 1px solid transparent; border-radius: 999px; padding: .6rem 1rem; background: transparent; color: #6b5a49; font-weight: 700; cursor: pointer; }
+.view-tabs button:hover { background: #fffaf3; }
+.view-tabs button.is-active { background: #3f2d1f; color: white; box-shadow: 0 3px 10px #2f21172b; }
+.view-tabs button span { font-size: 1.15rem; }
+.tree-area { min-height: calc(100vh - 150px); }
 .tree-controls { display: flex; justify-content: center; gap: .75rem; padding: 1.5rem 1rem 0; }
 .tree-controls button, .branch-toggle { border: 1px solid #9b7654; background: #fffaf3; color: #66452a; border-radius: 99px; padding: .45rem .85rem; cursor: pointer; }
 .tree-controls button:hover, .branch-toggle:hover { background: #f1e4d5; }
@@ -47,4 +52,56 @@ header p { margin: .3rem 0 0; color: #6b7280; }
 .confidence--probable { background: #eef3ff; color: #34558b; border: 1px solid #c7d4f1; }
 .confidence--hypothesis { background: #fff3df; color: #8a5a12; border: 1px solid #eed3a8; }
 .source-menu { margin-top: 1rem; border-top: 1px solid #e4d8ca; padding-top: .75rem; }.source-menu button { border: 0; background: transparent; padding: 0; color: #724d2e; cursor: pointer; font-weight: 700; }.source-menu ul { margin: .5rem 0 0; padding-left: 1.1rem; }.source-menu li { margin: .35rem 0; }.source-menu a { color: #7a4b25; }
-@media (max-width: 700px) { header { align-items: stretch; flex-direction: column; gap: 1rem; } .search-wrap { min-width: 0; } .tree-scroll { padding: 1rem; } .family-tree--vertical li { padding-left: .35rem; padding-right: .35rem; } .person-card { width: 220px; } }
+
+.map-view { padding: 1rem 1.5rem 2rem; max-width: 1500px; margin: 0 auto; }
+.map-toolbar { display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: .8rem; }
+.map-toolbar h2 { margin: 0; color: #392919; font-size: 1.35rem; }
+.map-toolbar p { margin: .2rem 0 0; color: #7b7168; font-size: .9rem; }
+.map-filters { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .45rem; }
+.map-filter { display: inline-flex; align-items: center; gap: .4rem; border: 1px solid #d2c8bb; border-radius: 999px; background: white; color: #665b50; padding: .42rem .72rem; cursor: pointer; font-size: .84rem; font-weight: 700; opacity: .58; }
+.map-filter.is-active { opacity: 1; box-shadow: 0 2px 7px #00000012; }
+.map-filter span, .legend-dot { display: inline-block; width: .72rem; height: .72rem; border-radius: 50%; }
+.map-filter--birth span, .legend-dot--birth { background: #2f7f6f; }
+.map-filter--marriage span, .legend-dot--marriage { background: #a2578d; }
+.map-filter--death span, .legend-dot--death { background: #b15a45; }
+.map-stage { position: relative; min-height: 610px; border: 1px solid #cfc5b8; border-radius: 18px; overflow: hidden; background: #e9e3d8; box-shadow: 0 8px 30px #503b2818; }
+.genealogy-map { width: 100%; height: min(72vh, 760px); min-height: 610px; z-index: 1; }
+.map-error { position: absolute; inset: 0; display: grid; place-items: center; padding: 2rem; background: #fff9; z-index: 10; color: #8b3d2d; font-weight: 700; }
+.map-legend { position: absolute; left: 1rem; bottom: 1rem; z-index: 500; display: flex; flex-wrap: wrap; gap: .75rem; padding: .55rem .7rem; border: 1px solid #d6cdc1; border-radius: 10px; background: #fffefbe8; box-shadow: 0 4px 15px #0002; font-size: .78rem; color: #4b443d; backdrop-filter: blur(5px); }
+.map-legend span { display: inline-flex; align-items: center; gap: .35rem; }
+.genealogy-marker-wrap { background: transparent; border: 0; }
+.genealogy-marker { display: block; width: 20px; height: 20px; border: 3px solid white; border-radius: 50%; box-shadow: 0 2px 7px #0007; transition: transform .14s ease, box-shadow .14s ease; }
+.genealogy-marker:hover { transform: scale(1.28); box-shadow: 0 3px 10px #0008; }
+.genealogy-marker--birth { background: #2f7f6f; }
+.genealogy-marker--marriage { background: #a2578d; }
+.genealogy-marker--death { background: #b15a45; }
+.map-person-card { position: absolute; top: 1rem; left: 1rem; z-index: 600; width: min(340px, calc(100% - 2rem)); padding: 1rem 1rem .95rem; border: 1px solid #d7ccc0; border-radius: 14px; background: #fffefbf2; box-shadow: 0 12px 35px #0003; backdrop-filter: blur(7px); }
+.map-person-card h3 { margin: .25rem 2rem .2rem 0; color: #392919; font-size: 1.15rem; }
+.map-person-card p { margin: .5rem 0; color: #5f574f; line-height: 1.4; font-size: .9rem; }
+.map-person-card .map-person-card__meta { color: #776d64; font-size: .82rem; }
+.map-person-card__event { display: inline-flex; margin: 0 !important; border-radius: 999px; padding: .2rem .5rem; color: white !important; font-weight: 800; font-size: .72rem !important; letter-spacing: .02em; }
+.map-person-card__event--birth { background: #2f7f6f; }
+.map-person-card__event--marriage { background: #a2578d; }
+.map-person-card__event--death { background: #b15a45; }
+.map-person-card__close { position: absolute; top: .55rem; right: .65rem; width: 2rem; height: 2rem; border: 0; border-radius: 50%; background: transparent; color: #7a6c60; cursor: pointer; font-size: 1.35rem; line-height: 1; }
+.map-person-card__close:hover { background: #eee6dc; }
+.map-person-card__open { margin-top: .25rem; border: 0; border-radius: 8px; background: #3f2d1f; color: white; padding: .55rem .8rem; cursor: pointer; font-weight: 700; }
+.map-person-card__open:hover { background: #5b402c; }
+.map-note { margin: .55rem .2rem 0; color: #7d746c; font-size: .8rem; }
+.leaflet-control-zoom a { color: #392919 !important; }
+.leaflet-tooltip { font-family: Inter, system-ui, sans-serif; border-color: #d8cec2; border-radius: 7px; color: #3f342b; box-shadow: 0 4px 12px #0002; }
+
+@media (max-width: 700px) {
+  header { align-items: stretch; flex-direction: column; gap: 1rem; padding: 1rem; }
+  .search-wrap { min-width: 0; }
+  .view-tabs { position: sticky; top: 0; z-index: 20; padding: .6rem; border-bottom: 1px solid #ddd6c8; }
+  .tree-scroll { padding: 1rem; }
+  .family-tree--vertical li { padding-left: .35rem; padding-right: .35rem; }
+  .person-card { width: 220px; }
+  .map-view { padding: .75rem .6rem 1.25rem; }
+  .map-toolbar { align-items: stretch; flex-direction: column; }
+  .map-filters { justify-content: flex-start; }
+  .map-stage, .genealogy-map { min-height: calc(100vh - 310px); height: calc(100vh - 310px); border-radius: 13px; }
+  .map-person-card { top: auto; bottom: 3.4rem; left: .65rem; width: calc(100% - 1.3rem); max-height: 42%; overflow: auto; }
+  .map-legend { left: .65rem; bottom: .65rem; right: .65rem; justify-content: center; }
+}
