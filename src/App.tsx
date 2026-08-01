@@ -9,6 +9,7 @@ import jeanMariePoulinExtensionData from './data/jean-marie-poulin-extension.jso
 import paternalExtensionData from './data/paternal-extension.json'
 import type { Person, Relationship, ResearchProfile, Source } from './types/genealogy'
 import { FamilyTree } from './components/FamilyTree'
+import { GenealogyMap } from './components/GenealogyMap'
 import './styles.css'
 
 interface GenealogyExtension {
@@ -17,6 +18,8 @@ interface GenealogyExtension {
   sources?: Source[]
   research?: ResearchProfile[]
 }
+
+type ViewTab = 'tree' | 'map'
 
 const extensions = [
   maternalExtensionData as GenealogyExtension,
@@ -80,6 +83,7 @@ const sources = [
 export default function App() {
   const [rootId, setRootId] = useState('charles-blouin')
   const [query, setQuery] = useState('')
+  const [activeTab, setActiveTab] = useState<ViewTab>('tree')
 
   const matches = useMemo(
     () =>
@@ -91,12 +95,17 @@ export default function App() {
     [query],
   )
 
+  function openPersonInTree(personId: string) {
+    setRootId(personId)
+    setActiveTab('tree')
+  }
+
   return (
     <main>
       <header>
         <div>
           <h1>Arbre généalogique</h1>
-          <p>Explorez les ancêtres, leurs histoires et les preuves disponibles.</p>
+          <p>Explorez les ancêtres, leurs histoires et les lieux qui ont marqué leur vie.</p>
         </div>
         <div className="search-wrap">
           <input
@@ -110,7 +119,7 @@ export default function App() {
                 <button
                   key={person.id}
                   onClick={() => {
-                    setRootId(person.id)
+                    openPersonInTree(person.id)
                     setQuery('')
                   }}
                 >
@@ -121,12 +130,40 @@ export default function App() {
           )}
         </div>
       </header>
-      <FamilyTree
-        people={people}
-        relationships={relationships}
-        sources={sources}
-        rootId={rootId}
-      />
+
+      <nav className="view-tabs" aria-label="Modes de visualisation">
+        <button
+          className={activeTab === 'tree' ? 'is-active' : ''}
+          onClick={() => setActiveTab('tree')}
+          aria-current={activeTab === 'tree' ? 'page' : undefined}
+        >
+          <span aria-hidden="true">◇</span>
+          Arbre
+        </button>
+        <button
+          className={activeTab === 'map' ? 'is-active' : ''}
+          onClick={() => setActiveTab('map')}
+          aria-current={activeTab === 'map' ? 'page' : undefined}
+        >
+          <span aria-hidden="true">⌖</span>
+          Carte
+        </button>
+      </nav>
+
+      {activeTab === 'tree' ? (
+        <FamilyTree
+          people={people}
+          relationships={relationships}
+          sources={sources}
+          rootId={rootId}
+        />
+      ) : (
+        <GenealogyMap
+          people={people}
+          relationships={relationships}
+          onOpenPerson={openPersonInTree}
+        />
+      )}
     </main>
   )
 }
