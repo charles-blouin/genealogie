@@ -39,5 +39,12 @@ header p { margin: .3rem 0 0; color: #6b7280; }
 .person-card__details dt { font-weight: 700; color: #392919; }.person-card__details dd { margin: 0; }
 .person-card__details h3 { margin: .9rem 0 .35rem; font-size: .95rem; color: #392919; }.person-card__details ul { margin: 0; padding-left: 1.1rem; }
 .person-card__tags { display: flex; flex-wrap: wrap; gap: .35rem; }.person-card__tags span { background: #f2e5d7; color: #724d2e; border-radius: 99px; padding: .15rem .45rem; font-size: .78rem; }
+.story { margin-top: 1rem; }
+.story__heading { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; margin-bottom: .35rem; }
+.story__heading h3 { margin: 0; }
+.confidence { display: inline-flex; align-items: center; border-radius: 999px; padding: .18rem .5rem; font-size: .72rem; font-weight: 750; line-height: 1; white-space: nowrap; }
+.confidence--confirmed { background: #e8f5ec; color: #25613a; border: 1px solid #b9ddc5; }
+.confidence--probable { background: #eef3ff; color: #34558b; border: 1px solid #c7d4f1; }
+.confidence--hypothesis { background: #fff3df; color: #8a5a12; border: 1px solid #eed3a8; }
 .source-menu { margin-top: 1rem; border-top: 1px solid #e4d8ca; padding-top: .75rem; }.source-menu button { border: 0; background: transparent; padding: 0; color: #724d2e; cursor: pointer; font-weight: 700; }.source-menu ul { margin: .5rem 0 0; padding-left: 1.1rem; }.source-menu li { margin: .35rem 0; }.source-menu a { color: #7a4b25; }
 @media (max-width: 700px) { header { align-items: stretch; flex-direction: column; gap: 1rem; } .search-wrap { min-width: 0; } .tree-scroll { padding: 1rem; } .family-tree--vertical li { padding-left: .35rem; padding-right: .35rem; } .person-card { width: 220px; } }
