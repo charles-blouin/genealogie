@@ -1,0 +1,63 @@
+[
+  {
+    "id": "charles-blouin",
+    "displayName": "Charles Blouin",
+    "givenNames": ["Charles"],
+    "surnameAtBirth": "Blouin",
+    "sex": "male",
+    "living": true,
+    "summary": "Starting person for this family tree.",
+    "occupations": [
+      {
+        "title": "Engineer and entrepreneur",
+        "organization": "Tyto Robotics"
+      }
+    ],
+    "tags": ["Blouin branch"]
+  },
+  {
+    "id": "rene-blouin",
+    "displayName": "René Blouin",
+    "givenNames": ["René"],
+    "surnameAtBirth": "Blouin",
+    "sex": "male",
+    "living": true,
+    "summary": "Father of Charles Blouin."
+  },
+  {
+    "id": "nicole-poulin",
+    "displayName": "Nicole Poulin",
+    "givenNames": ["Nicole"],
+    "surnameAtBirth": "Poulin",
+    "sex": "female",
+    "living": true,
+    "summary": "Mother of Charles Blouin."
+  },
+  {
+    "id": "jean-paul-blouin",
+    "displayName": "Jean-Paul Blouin",
+    "givenNames": ["Jean-Paul"],
+    "surnameAtBirth": "Blouin",
+    "sex": "male",
+    "living": false,
+    "summary": "Paternal grandfather of Charles Blouin."
+  },
+  {
+    "id": "noella-laroque",
+    "displayName": "Noëlla Laroque",
+    "givenNames": ["Noëlla"],
+    "surnameAtBirth": "Laroque",
+    "sex": "female",
+    "living": false,
+    "summary": "Paternal grandmother of Charles Blouin."
+  },
+  {
+    "id": "jean-marie-poulin",
+    "displayName": "Jean-Marie Poulin",
+    "givenNames": ["Jean-Marie"],
+    "surnameAtBirth": "Poulin",
+    "sex": "male",
+    "living": false,
+    "summary": "Maternal grandfather of Charles Blouin."
+  }
+]

@@ -1,0 +1,9 @@
+[
+  { "id": "parent-rene-charles", "type": "biological-parent", "personIds": ["rene-blouin", "charles-blouin"] },
+  { "id": "parent-nicole-charles", "type": "biological-parent", "personIds": ["nicole-poulin", "charles-blouin"] },
+  { "id": "parent-jean-paul-rene", "type": "biological-parent", "personIds": ["jean-paul-blouin", "rene-blouin"] },
+  { "id": "parent-noella-rene", "type": "biological-parent", "personIds": ["noella-laroque", "rene-blouin"] },
+  { "id": "parent-jean-marie-nicole", "type": "biological-parent", "personIds": ["jean-marie-poulin", "nicole-poulin"] },
+  { "id": "marriage-rene-nicole", "type": "marriage", "personIds": ["rene-blouin", "nicole-poulin"] },
+  { "id": "marriage-jean-paul-noella", "type": "marriage", "personIds": ["jean-paul-blouin", "noella-laroque"] }
+]
